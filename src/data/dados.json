@@ -1,0 +1,998 @@
+{
+  "versao": 1792008084879,
+  "places": [
+    {
+      "nota": 0,
+      "telefone": "(19) 3432-2888",
+      "site": "",
+      "horario": "Seg. a sáb., 11h às 15h",
+      "cor": "#2e7d32",
+      "status": "aprovado",
+      "id": "pira-nampin",
+      "nome": "Nampin",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Self-service",
+        "Almoço"
+      ],
+      "descricao": "Buffet de almoço vegano que mistura pratos brasileiros com receitas de inspiração chinesa e japonesa.",
+      "endereco": "Rua Boa Morte, 1224 — Centro",
+      "cidade": "Piracicaba",
+      "lat": -22.7335,
+      "lng": -47.654137,
+      "precisao": "pela rua",
+      "fonte": "https://spinach.guide/venues/nampin-174559/",
+      "obs": "Algumas fontes chamam de vegetariano e outras de 100% vegano. Confirme e ajuste a etiqueta.",
+      "imagem": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T5ZiWtgQWBAiryg5Hke-V77a2yQ0dkt97xHNfMZ5dPmUeLEg8cVhyVvmbTlkF9Fk69ngltVu0d3ZvpKt9HPzerI8tk_ctvKvkZ-RI2DTI6ox3KAk6BWm-DLKWZdyjl02r85DCmYQ=s1360-w1360-h1020-rw",
+      "redes": {
+        "instagram": "@nampin_veg"
+      }
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "",
+      "horario": "",
+      "cor": "#558b2f",
+      "status": "aprovado",
+      "id": "pira-manjericao",
+      "nome": "Manjericão do Quintal Veg",
+      "tipo": "Restaurante",
+      "tags": [
+        "Opções veganas",
+        "Self-service",
+        "Pet friendly"
+      ],
+      "descricao": "Comida caseira por quilo, quase toda vegana, com feijoada e parmegiana veganas. Aos sábados o cardápio é 100% vegano.",
+      "endereco": "Rua Santa Cruz, 796 — Alto",
+      "cidade": "Piracicaba",
+      "lat": -22.737007,
+      "lng": -47.650235,
+      "precisao": "pela rua",
+      "fonte": "https://www.happycow.net/reviews/manjericao-do-quintal-veg-piracicaba-381966",
+      "obs": "No mesmo endereço funcionava o Tomate Seco. Confirme o nome atual e o horário.",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/345041191_256617000095827_109412560494344108_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41MDAuQzMifQ%3D%3D&_nc_ohc=XBrNKpIbCgYQ7kNvwGSRyQi&_nc_oc=AdrWdZCSgbBN3mDCTEUvzqlM1Ew1t4HYEIBQ_4aTULuCnx6LGvDXxcujSmo-NQ1cWNqzUHAIz2IKVtKa4aDxuoVi&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQNwiEjkxe6_KlN9ZbvrlagchvYk1vieHQMb_0yuC9BNwQ&oe=6AD5AD7F",
+      "redes": {
+        "instagram": "@manjericaodoquintalveg"
+      }
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "https://gorillaveganburger.goomer.app/",
+      "horario": "Qua. a dom., 18h às 22h",
+      "cor": "#33691e",
+      "status": "aprovado",
+      "id": "pira-gorilla",
+      "nome": "Gorilla Vegan Burger",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Hambúrguer",
+        "Noite"
+      ],
+      "descricao": "Hamburgueria 100% vegana com lanches de rua e produtos veganos de artistas locais.",
+      "endereco": "Rua do Vergueiro, 400 — Centro",
+      "cidade": "Piracicaba",
+      "lat": -22.71881,
+      "lng": -47.650804,
+      "fonte": "https://www.pirareceitasnews.com.br/2025/11/descubra-os-5-restaurantes-veganos-e.html",
+      "obs": "Localização exata (o próprio lugar está marcado no OpenStreetMap).",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.82787-19/840309172_18346048879253371_3545518419940062097_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=ZjGoU3_LrhcQ7kNvwFrc3EK&_nc_oc=AdpsgppF-79E4ayoBvAkapTNe0R-7Kny5krHtTiEYhXzW8P3_H4IHY3SPhi0JltzNTICkt97sEVEb5M2hkD-R6OM&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_gid=QM_fcgO4O7UBIGee_xll5Q&_nc_ss=7b6a8&oh=00_AQPeTw-G6j2dhoC5gE6brgcrOGfbHGr41s43U0jlP9UnQw&oe=6AD5C161",
+      "redes": {}
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "https://linktr.ee/matilhaveganfood",
+      "horario": "Seg. a sex., horário comercial",
+      "cor": "#6d4c41",
+      "status": "aprovado",
+      "id": "pira-matilha",
+      "nome": "Matilha Vegan Food",
+      "tipo": "Loja",
+      "tags": [
+        "100% vegano",
+        "Congelados",
+        "Padaria"
+      ],
+      "descricao": "Empório 100% vegano com lanches, refeições prontas e itens de padaria.",
+      "endereco": "Rua Treze de Maio, 1210 — Alto",
+      "cidade": "Piracicaba",
+      "lat": -22.721632,
+      "lng": -47.650257,
+      "precisao": "pela rua",
+      "fonte": "https://www.pirareceitasnews.com.br/2025/11/descubra-os-5-restaurantes-veganos-e.html",
+      "obs": "Um site lista este endereço como sendo em Rio Claro. Confirme a cidade.",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/325162231_208130805112190_866072635165388106_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy44MjguQzMifQ%3D%3D&_nc_ohc=smSsSSgs5o0Q7kNvwFojckN&_nc_oc=AdoVHQLbXys3opmrjDMIL5-z6oUsa2j45wOxxZBKs8By9Q_CIpziQE_SrwZhuckqf2wmKExNXLScZ80LANOxuMKh&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQNR4x8u2SZ2GcFZMK60cgh_Wke559AMAREpB80-2xxnfA&oe=6AD59CD0",
+      "redes": {
+        "instagram": "@matilhaveganfood"
+      }
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "",
+      "horario": "Seg. a sáb., 11h30 às 14h30",
+      "cor": "#8d6e63",
+      "status": "aprovado",
+      "id": "pira-vivace",
+      "nome": "Vivace",
+      "tipo": "Restaurante",
+      "tags": [
+        "Opções veganas",
+        "Vegetariano",
+        "Self-service"
+      ],
+      "descricao": "Buffet vegetariano de almoço com pratos brasileiros e chineses. Pergunte à equipe quais são veganos.",
+      "endereco": "Av. Dona Jane Conceição, 1485 — Paulista",
+      "cidade": "Piracicaba",
+      "lat": -22.734511,
+      "lng": -47.665487,
+      "precisao": "pela rua",
+      "fonte": "https://spinach.guide/venues/vivace-175259/",
+      "obs": "Vegetariano, não 100% vegano: os pratos veganos não vêm identificados.",
+      "imagem": "https://scontent.fcpq5-1.fna.fbcdn.net/v/t39.30808-6/305249566_551603380047941_7239553778025455001_n.jpg?stp=dst-jpg_tt6&cstp=mx1280x1280&ctp=s1280x1280&_nc_cat=102&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=YKB_FLgfekcQ7kNvwGTlrzd&_nc_oc=AdruCW5h3rdVIA5Y9fhijte7xRlb-9zwhlseUZbL2jW9ufA_MKxDEQR1oOXRWBD2HSq2J5tsrMgdRgcDGOwuGj-b&_nc_zt=23&_nc_ht=scontent.fcpq5-1.fna&_nc_gid=Ug-MXbRixngj-js1WD6xEg&_nc_ss=7b2a8&oh=00_AQNlHl6mJJW5LxTPwaXYSNyH0OzWgbHgOekabhXjEUNfhQ&oe=6AD5BB38",
+      "redes": {}
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "https://macacoverdeveg.com.br/macaco_verde_vegan",
+      "horario": "",
+      "cor": "#2e7d32",
+      "status": "aprovado",
+      "id": "lim-macacoverde",
+      "nome": "Macaco Verde Hamburgueria Vegana",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Hambúrguer"
+      ],
+      "descricao": "Hamburgueria vegana no centro de Limeira, referência para veganos e vegetarianos da cidade.",
+      "endereco": "Rua Presidente Roosevelt, 518 — Centro",
+      "cidade": "Limeira",
+      "lat": -22.562147,
+      "lng": -47.40452,
+      "fonte": "https://www.tripadvisor.com/Restaurant_Review-g303617-d17786094-Reviews-Macaco_Verde_Hamburgueria_Vegana-Limeira_State_of_Sao_Paulo.html",
+      "obs": "Localização exata (o próprio lugar está marcado no OpenStreetMap).",
+      "imagem": "https://storage.googleapis.com/prod-cardapio-web/uploads/company/logo/14067/a488880elogopng_1732212446797414.png",
+      "redes": {
+        "instagram": "@macacoverdeveg"
+      }
+    },
+    {
+      "nota": 0,
+      "telefone": "(19) 98808-6286",
+      "site": "https://www.ifood.com.br/delivery/limeira-sp/soul-kitchen---comida-vegana-centro/8566f4e9-8018-4c31-9741-6478c85238bb?UTM_Medium=share&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAcGRvZgJzcnRjBmFwcF9pZA85MzY2MTk3NDMzOTI0NTkAAafXk4iAKnj5O6nZfFpaONe619LKSsPqgKKdnOJSpsfYE4M3YuYNqsdUvTVbiw_aem_UvaD2yKb9AcG_-x2hRuNmg",
+      "horario": "Ter. a sáb., 11h às 14h",
+      "cor": "#558b2f",
+      "status": "aprovado",
+      "id": "lim-soulkitchen",
+      "nome": "Soul Kitchen Comida Vegana",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Almoço"
+      ],
+      "descricao": "Apresenta-se como o primeiro restaurante vegano de Limeira. Serve almoço.",
+      "endereco": "Rua Joaquim Rodrigues de Oliveira, 554",
+      "cidade": "Limeira",
+      "lat": -22.5783,
+      "lng": -47.401927,
+      "precisao": "pela rua",
+      "fonte": "https://www.happycow.net/widget/south_america/brazil/limeira/",
+      "obs": "O Tripadvisor lista o restaurante no Shopping Pátio Limeira; o HappyCow, neste endereço. Confirme qual vale.",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/192695803_500840627725675_4947328488331920191_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy43OTcuQzMifQ%3D%3D&_nc_ohc=L9mlFCrTtAwQ7kNvwGX6LrR&_nc_oc=Ado9Fk8YFP_4npCFmdxBZIJU7K2OWFgFNHLCbUmF_bz9VNi_x8BoW8DRCm3c3aZWAQMC8aCTtpdO88bG_FtMxJs2&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQO7dPu0_qhuM519YKs3RD9wgJf6pon5ejNc64-7Wrv4QA&oe=6AD59DE1",
+      "redes": {
+        "instagram": "@soulkitchenveg"
+      }
+    },
+    {
+      "nota": 0,
+      "telefone": "",
+      "site": "https://hastalaveganburger.menudino.com/",
+      "horario": "",
+      "cor": "#bf360c",
+      "status": "aprovado",
+      "id": "ame-hastalavegan",
+      "nome": "Hasta la Vegan Burger",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Hambúrguer"
+      ],
+      "descricao": "Hamburgueria vegana em Americana.",
+      "endereco": "Av. Campos Sales, 307 — Vila Medon",
+      "cidade": "Americana",
+      "lat": -22.741472,
+      "lng": -47.337827,
+      "precisao": "pela rua",
+      "fonte": "https://www.happycow.net/widget/south_america/brazil/americana/",
+      "obs": "Confirme horário e se continua aberto.",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.82787-19/731584155_18123573634671652_8230175160523711398_n.jpg?_nc_cat=104&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=_dg_A9Y4ZJQQ7kNvwG_9M-Q&_nc_oc=Adoswd3-1jH92I8ZmiXZMDB26iVHO0FY8_fC04moCI2HRwxMpNCaVHt8fzaba2sU_TDnJthUnwOltqOoJui5Uj93&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_gid=86Fa7lRSPxlQF9g4-MiAMw&_nc_ss=7b6a8&oh=00_AQP-BXFHVITmMInTU67q9vm5UEfE9rSEUBvQZxsOOJ76tA&oe=6AD5B8D2",
+      "redes": {
+        "instagram": "@hastalaveganburger"
+      }
+    }
+  ],
+  "reviews": [],
+  "posts": [
+    {
+      "titulo": "Como fazer a transição para o veganismo sem ficar anêmico",
+      "resumo": "Ferro, vitamina B12 e exames: o que observar para mudar a alimentação com saúde.",
+      "corpo": "Muita gente adia a decisão de virar vegana por medo de ficar anêmica. A preocupação faz sentido, mas tem solução: com informação e alguns hábitos simples, dá para fazer a transição com segurança.\n\nEste texto é um guia geral. Ele não substitui a consulta com um nutricionista ou médico, principalmente se você já teve anemia, está grávida ou tem alguma condição de saúde.\n\n## Primeiro: anemia não é só falta de ferro\n\nExistem tipos diferentes de anemia. Os dois que mais importam para quem vai parar de comer produtos de origem animal são:\n\n- **Anemia por falta de ferro (ferropriva):** a mais comum no mundo, em qualquer tipo de dieta.\n- **Anemia por falta de vitamina B12 (megaloblástica):** pode também causar problemas neurológicos. É a que mais exige atenção de quem é vegano.\n\n## Vitamina B12: suplementar não é opcional\n\nA B12 é produzida por bactérias e praticamente não aparece em alimentos vegetais de forma confiável. Alimentos como algas, cogumelos e fermentados não resolvem. Quem é vegano precisa de suplemento ou de alimentos fortificados.\n\nA boa notícia é que o suplemento é barato e fácil de achar. A dose e a forma (gotas, comprimido ou injeção) devem ser definidas por um profissional, de acordo com os seus exames.\n\n## Ferro: a questão é a absorção\n\nOs vegetais têm bastante ferro, mas é o chamado ferro não heme, que o corpo absorve em menor quantidade do que o ferro da carne. Estudos mostram que vegetarianos costumam ter reservas de ferro mais baixas, embora a taxa de anemia seja parecida com a de quem come carne. Por isso, vale caprichar.\n\nBoas fontes de ferro vegetal:\n\n- Feijões, lentilha, grão-de-bico e ervilha\n- Tofu e outros derivados de soja\n- Sementes de abóbora, gergelim e tahine\n- Aveia, quinoa e cacau\n- Folhas verde-escuras, como couve e rúcula\n\n## Truques que aumentam a absorção\n\n- **Vitamina C na mesma refeição:** laranja, limão no feijão, acerola, pimentão ou tomate aumentam bastante a absorção do ferro.\n- **Café, chá e chimarrão longe das refeições:** essas bebidas atrapalham a absorção. Prefira tomar uma hora antes ou depois de comer.\n- **Deixe os grãos de molho:** deixar feijão e grão-de-bico de molho, e descartar a água, reduz os fitatos, substâncias que prendem o ferro.\n- **Cuidado com o espinafre:** ele tem ferro, mas também oxalato, que reduz a absorção. Varie as folhas.\n- **Panela de ferro:** cozinhar alimentos ácidos, como molho de tomate, em panela de ferro pode aumentar um pouco o ferro da comida.\n\n## Exames antes e depois\n\nAntes de mudar a alimentação, peça ao seu médico um check-up com hemograma, ferritina (as reservas de ferro) e vitamina B12. Repita alguns meses depois da transição. Assim você compara os números e ajusta o que for preciso, em vez de adivinhar.\n\nMulheres que menstruam, gestantes, crianças e atletas precisam de atenção redobrada, porque gastam mais ferro.\n\n## Um prato que ajuda\n\nUm almoço simples já cobre muito: arroz, feijão com limão, couve refogada, uma porção de tofu ou grão-de-bico e uma laranja de sobremesa. É a comida brasileira de sempre, com as escolhas certas.\n\nMudar com calma, trocando uma refeição de cada vez, também ajuda o corpo e a rotina a se adaptarem. O veganismo bem planejado é considerado adequado em todas as fases da vida. O segredo está no \"bem planejado\".",
+      "cor": "#c62828",
+      "autor": "Equipe Rolês Veganos",
+      "imagem": "https://s2-receitas.glbimg.com/4irTnXFaIUKaPK4feaDMg49fYm8=/0x0:5184x3456/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/s/V/9OBNOOQVOP5pjTFPioNg/veganismo-dicas-para-quem-estar-em-transicao.jpg",
+      "status": "publicado",
+      "id": "art-anemia",
+      "slug": "transicao-veganismo-sem-anemia",
+      "data": "2026-10-14"
+    },
+    {
+      "titulo": "Pegadinhas dos rótulos: como achar ingredientes de origem animal",
+      "resumo": "Nomes técnicos, códigos INS e frases de marketing que escondem leite, ovo e outros ingredientes animais.",
+      "corpo": "Ler o rótulo é o hábito mais útil de quem é vegano, e também o que mais confunde no começo. Muitos ingredientes de origem animal aparecem com nomes técnicos ou códigos. Este guia ajuda a reconhecer os mais comuns.\n\n## Comece pela lista de ingredientes\n\nA frente da embalagem é feita para vender. A informação que vale está na lista de ingredientes, que vem em ordem decrescente de quantidade: o primeiro item é o que tem em maior quantidade.\n\n## O aviso de alérgicos ajuda, mas não basta\n\nNo Brasil, os rótulos são obrigados a avisar sobre alimentos que causam alergia. Duas frases parecem iguais, mas não são:\n\n- **\"ALÉRGICOS: CONTÉM LEITE\" ou \"CONTÉM OVO\":** o ingrediente está na receita. O produto não é vegano.\n- **\"ALÉRGICOS: PODE CONTER LEITE\":** o ingrediente não faz parte da receita, mas a fábrica não garante que não houve contato, por exemplo numa linha de produção compartilhada. Para a maioria dos veganos e para a Vegan Society, isso não torna o produto não vegano. Para quem tem alergia, é um alerta importante.\n\nMas o aviso de alérgicos não cobre gelatina, mel, carmim e outros ingredientes animais que não causam alergia. Por isso, a lista de ingredientes continua sendo essencial.\n\n## \"Zero lactose\" não quer dizer sem leite\n\nEssa é a pegadinha mais comum. Um produto \"zero lactose\" ou \"sem lactose\" é feito com leite, só que com a lactose quebrada. Continua sendo de origem animal.\n\n## Nomes que escondem leite\n\n- Soro de leite, whey, leite em pó, sólidos de leite\n- Caseína, caseinato de sódio ou de cálcio\n- Lactoalbumina, lactoglobulina, lactose\n- Gordura do leite, manteiga, ghee, creme de leite\n\n## Nomes que escondem ovo\n\n- Albumina, clara em pó, ovo em pó\n- Lisozima (INS 1105), muito usada em queijos e vinhos\n\n## Outros ingredientes de origem animal\n\n- **Gelatina e colágeno:** feitos de pele e ossos de animais. Aparecem em balas, gomas, iogurtes e cápsulas.\n- **Carmim ou cochonilha (INS 120):** corante vermelho feito de insetos. Comum em iogurtes, sucos, doces e salsichas.\n- **Goma-laca (INS 904):** resina produzida por insetos, usada para dar brilho a confeitos e frutas.\n- **Cera de abelha (INS 901), mel e própolis**\n- **L-cisteína (INS 920):** pode vir de penas ou de cabelo. Aparece em pães industrializados.\n- **Vitamina D3 (colecalciferol):** geralmente feita de lanolina, a gordura da lã de ovelha. Existe D3 vegana, feita de líquen, e nesse caso o rótulo costuma avisar.\n- **Ômega-3 de óleo de peixe**\n- **Banha, sebo, gordura animal, extrato ou caldo de carne e de frango**\n\n## Ingredientes que podem ser animais ou vegetais\n\nAlguns ingredientes têm as duas origens, e o rótulo não diz qual foi usada:\n\n- Mono e diglicerídeos de ácidos graxos (INS 471)\n- Estearatos e ácido esteárico\n- \"Aroma natural\", que pode vir de carne, leite ou plantas\n\nNesses casos, a saída é perguntar ao SAC da empresa. A maioria responde rápido, e você ainda mostra que existe demanda por produtos veganos.\n\n## Palavras de marketing que não garantem nada\n\n\"Vegetal\", \"plant-based\", \"veggie\", \"natural\" e \"sem carne\" não são garantia de que o produto é vegano. Um hambúrguer \"veggie\" pode levar ovo ou queijo. Um \"creme vegetal\" pode ter soro de leite. Confira sempre a lista.\n\n## O caminho mais curto: selos\n\nSelos de certificação vegana, como o Selo Vegano da Sociedade Vegetariana Brasileira, indicam que o produto foi avaliado e não tem ingredientes de origem animal nem testes em animais. Quando o selo está lá, a conferência fica muito mais rápida.\n\nCom o tempo, você decora os nomes e passa a ler um rótulo em poucos segundos. No começo, salve este guia no celular.",
+      "cor": "#f9a825",
+      "autor": "Equipe Rolês Veganos",
+      "imagem": "https://www.nutrimixassessoria.com.br/wp-content/uploads/2015/06/ficha-tecnica-rotulos-alimentos-01.jpg",
+      "status": "publicado",
+      "id": "art-rotulos",
+      "slug": "pegadinhas-dos-rotulos",
+      "data": "2026-10-14"
+    },
+    {
+      "titulo": "Proteína sem carne: onde encontrar e quanto você precisa",
+      "resumo": "As melhores fontes vegetais de proteína e por que você não precisa combinar alimentos em cada refeição.",
+      "corpo": "\"Mas e a proteína?\" é a pergunta que todo vegano já ouviu. A resposta curta: dá para comer proteína suficiente só com plantas, desde que a alimentação seja variada e tenha leguminosas todos os dias.\n\n## Quanto você precisa\n\nA recomendação mais usada para adultos é de cerca de 0,8 g de proteína por quilo de peso por dia. Uma pessoa de 60 kg, por exemplo, precisa de aproximadamente 48 g por dia. Atletas, idosos e gestantes podem precisar de mais. Um nutricionista ajuda a calcular o seu caso.\n\n## As melhores fontes vegetais\n\nOs valores abaixo são aproximados e variam conforme a marca e o preparo:\n\n- **Lentilha, grão-de-bico e feijões cozidos:** de 5 a 9 g por 100 g\n- **Tofu:** de 8 a 15 g por 100 g, dependendo da firmeza\n- **Proteína de soja texturizada (PTS) seca:** perto de 50 g por 100 g\n- **Seitan (glúten de trigo):** de 20 a 25 g por 100 g\n- **Amendoim e pasta de amendoim:** cerca de 25 g por 100 g\n- **Sementes de abóbora, girassol e cânhamo**\n- **Aveia, quinoa e ervilha**\n\n## O mito da combinação na mesma refeição\n\nDurante anos se disse que era preciso combinar arroz com feijão no mesmo prato para ter uma \"proteína completa\". Hoje se sabe que o corpo junta os aminoácidos ao longo do dia. Comer variado durante o dia já basta.\n\nO único ponto de atenção é a lisina, um aminoácido que os cereais têm pouco e as leguminosas têm bastante. Por isso a regra prática é: coma leguminosas (feijão, lentilha, grão-de-bico, soja) todos os dias.\n\n## Ideias práticas\n\n- **Café da manhã:** mingau de aveia com pasta de amendoim, ou tofu mexido no pão\n- **Almoço:** arroz, feijão e uma porção de PTS ou grão-de-bico\n- **Lanche:** homus com cenoura ou pão, ou um punhado de amendoim\n- **Jantar:** macarrão com molho de lentilha à bolonhesa\n\nArroz com feijão, o prato mais comum do Brasil, já é uma ótima base. Com um pouco de variedade, a proteína deixa de ser preocupação.",
+      "cor": "#6d4c41",
+      "autor": "Equipe Rolês Veganos",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Btqnp0DQxTcG3xnO-S8Hosv1doiPYmPzCrYyOzW3APzn1fHdeYWRPi4&s=10",
+      "status": "publicado",
+      "id": "art-proteina",
+      "slug": "proteina-sem-carne",
+      "data": "2026-10-14"
+    },
+    {
+      "titulo": "Como comer fora sendo vegano, em qualquer restaurante",
+      "resumo": "O que pedir em cada tipo de cozinha, os ingredientes escondidos e como conversar com o garçom.",
+      "corpo": "Nem sempre tem um restaurante vegano por perto, e tudo bem. Com algumas dicas, dá para comer bem em quase qualquer lugar, de rodízio de pizza a almoço de self-service.\n\n## Antes de sair\n\n- Veja se a cidade tem lugares veganos aqui no Rolês Veganos.\n- Olhe o cardápio online e o Instagram do restaurante. Muitos marcam as opções veganas.\n- Ligar antes evita surpresas, principalmente em ocasiões especiais.\n\n## Como pedir\n\nSeja específico. \"Vegano\" ainda confunde muita gente, então explique o que você não come: \"sem carne, frango, peixe, ovo, leite, queijo, manteiga e mel\".\n\nPergunte com gentileza sobre o preparo. Um garçom bem tratado costuma ir conferir na cozinha.\n\n## O que procurar em cada cozinha\n\n- **Árabe:** homus, babaganuche, falafel, tabule e esfiha de verdura são opções comuns. Confira se a coalhada ou o iogurte vão no molho.\n- **Japonesa:** sushi de pepino, de manga, de shitake ou de abacate, além de guioza de legumes. O missoshiru costuma levar caldo de peixe (dashi), então pergunte.\n- **Italiana:** massas secas costumam não ter ovo, mas as frescas geralmente têm. Molho de tomate, alho e óleo ou pesto sem queijo funcionam bem.\n- **Pizzaria:** peça sem queijo, com bastante legumes e azeite. Algumas pizzarias já têm queijo vegetal.\n- **Indiana:** muitos pratos com grão-de-bico, lentilha e legumes. Atenção ao ghee (manteiga clarificada) e ao paneer (queijo).\n- **Self-service brasileiro:** arroz, saladas e legumes costumam ser seguros. O feijão às vezes leva bacon ou carne, então pergunte.\n- **Mexicana:** feijão, guacamole e legumes. O feijão refrito às vezes é feito com banha.\n\n## Ingredientes escondidos\n\n- Caldo de carne ou de frango em sopas, risotos e arroz\n- Manteiga para finalizar legumes e massas\n- Queijo ralado por cima de saladas\n- Fritadeira compartilhada com carnes e peixes\n\n## Seja exigente, mas sem complicar\n\nCada pedido de prato vegano mostra ao restaurante que existe demanda. Se a experiência for boa, elogie e volte. Se o lugar acolheu bem, conte para os outros: avalie aqui no site e ajude a próxima pessoa a encontrar o rolê dela.",
+      "cor": "#00838f",
+      "autor": "Equipe Rolês Veganos",
+      "imagem": "https://st3.depositphotos.com/1177973/13251/i/450/depositphotos_132516946-stock-photo-waiter-serving-salad.jpg",
+      "status": "publicado",
+      "id": "art-comer-fora",
+      "slug": "comer-fora-sendo-vegano",
+      "data": "2026-10-14"
+    }
+  ],
+  "comments": [],
+  "docs": [
+    {
+      "id": "d1",
+      "titulo": "Dominion",
+      "ano": 2018,
+      "direcao": "Chris Delforce",
+      "duracao": "2h",
+      "tema": "Animais",
+      "sinopse": "Imagens de câmeras escondidas e drones mostram a rotina de fazendas industriais e abatedouros na Austrália.",
+      "link": "https://www.youtube.com/watch?v=LQRAfJyEsko",
+      "cor": "#3e2723",
+      "imagem": "/docs/d1.webp",
+      "gratis": true
+    },
+    {
+      "id": "d2",
+      "titulo": "Terráqueos (Earthlings)",
+      "ano": 2005,
+      "direcao": "Shaun Monson",
+      "duracao": "1h35",
+      "tema": "Animais",
+      "sinopse": "Narrado por Joaquin Phoenix, mostra como a sociedade usa animais como comida, roupa, entretenimento e em pesquisa.",
+      "link": "",
+      "cor": "#263238",
+      "imagem": "/docs/d2.webp",
+      "gratis": false
+    },
+    {
+      "id": "d3",
+      "titulo": "A Carne é Fraca",
+      "ano": 2005,
+      "direcao": "Denise Gonçalves (Instituto Nina Rosa)",
+      "duracao": "54 min",
+      "tema": "Animais",
+      "sinopse": "Documentário brasileiro sobre os impactos do consumo de carne nos animais, na saúde e no meio ambiente.",
+      "link": "https://libreflix.org/i/a-carne-e-fraca",
+      "cor": "#4e342e",
+      "imagem": "/docs/d3.webp",
+      "gratis": true
+    },
+    {
+      "id": "d4",
+      "titulo": "Cowspiracy",
+      "ano": 2014,
+      "direcao": "Kip Andersen e Keegan Kuhn",
+      "duracao": "1h30",
+      "tema": "Meio ambiente",
+      "sinopse": "Investiga o peso da pecuária no desmatamento, no uso de água e nas emissões, e por que o tema é pouco discutido.",
+      "link": "",
+      "cor": "#1b5e20",
+      "imagem": "/docs/d4.webp",
+      "gratis": false
+    },
+    {
+      "id": "d5",
+      "titulo": "Seaspiracy",
+      "ano": 2021,
+      "direcao": "Ali Tabrizi",
+      "duracao": "1h29",
+      "tema": "Meio ambiente",
+      "sinopse": "Uma investigação sobre a pesca industrial e seus efeitos nos oceanos.",
+      "link": "",
+      "cor": "#01579b",
+      "imagem": "/docs/d5.webp",
+      "gratis": false
+    },
+    {
+      "id": "d6",
+      "titulo": "Eating Our Way to Extinction",
+      "ano": 2021,
+      "direcao": "Ludo e Otto Brockway",
+      "duracao": "1h20",
+      "tema": "Meio ambiente",
+      "sinopse": "Relaciona a produção de alimentos de origem animal com a crise climática e a perda de biodiversidade.",
+      "link": "https://www.youtube.com/watch?v=3rziZBnZQrA",
+      "cor": "#33691e",
+      "imagem": "/docs/d6.webp",
+      "gratis": true
+    },
+    {
+      "id": "d7",
+      "titulo": "Forks Over Knives",
+      "ano": 2011,
+      "direcao": "Lee Fulkerson",
+      "duracao": "1h36",
+      "tema": "Saúde",
+      "sinopse": "Acompanha pesquisas e pacientes que mudaram para uma alimentação baseada em vegetais integrais.",
+      "link": "",
+      "cor": "#e65100",
+      "imagem": "/docs/d7.webp",
+      "gratis": false
+    },
+    {
+      "id": "d8",
+      "titulo": "The Game Changers",
+      "ano": 2018,
+      "direcao": "Louie Psihoyos",
+      "duracao": "1h25",
+      "tema": "Saúde",
+      "sinopse": "Atletas de alto rendimento falam sobre desempenho e recuperação com alimentação vegetal.",
+      "link": "",
+      "cor": "#bf360c",
+      "imagem": "/docs/d8.webp",
+      "gratis": false
+    },
+    {
+      "id": "d9",
+      "titulo": "Vegucated",
+      "ano": 2011,
+      "direcao": "Marisa Miller Wolfson",
+      "duracao": "1h16",
+      "tema": "Comece por aqui",
+      "sinopse": "Três pessoas de Nova York aceitam viver seis semanas como veganas. Leve e bom para quem está começando.",
+      "link": "",
+      "cor": "#558b2f",
+      "imagem": "/docs/d9.webp",
+      "gratis": false
+    },
+    {
+      "id": "d10",
+      "titulo": "The End of Meat",
+      "ano": 2017,
+      "direcao": "Marc Pierschel",
+      "duracao": "1h34",
+      "tema": "Comece por aqui",
+      "sinopse": "Imagina um mundo pós-carne e conversa com quem está construindo esse futuro: ativistas, cientistas e empreendedores.",
+      "link": "",
+      "cor": "#00695c",
+      "imagem": "/docs/d10.webp",
+      "gratis": false
+    }
+  ],
+  "users": [
+    {
+      "id": "admin",
+      "nome": "Admin",
+      "email": "conras.augusto@gmail.com",
+      "senhaHash": "783becf44d0d5d7323cc639149d97573adda73a5a192c39f633fb0413a944af6",
+      "role": "admin"
+    }
+  ],
+  "cupons": [
+    {
+      "loja": "Rakkau",
+      "descricao": "Adicione os produtos ao carrinho e aplique o cupom para ter 40% de desconto.",
+      "codigo": "ROLESVEGANOS",
+      "desconto": "40% de Desconto",
+      "link": "https://www.rakkau.com.br/",
+      "validade": "",
+      "categoria": "Alimentação",
+      "cor": "#6b1f1f",
+      "imagem": "https://acdn-us.mitiendanube.com/stores/821/582/themes/flex/img-1198943388-1737480207-73021ca9514a89fbfb62068e1babec391737480207.png?6390249532216629428",
+      "status": "publicado",
+      "id": "mv8hzhkwi9ay"
+    }
+  ],
+  "receitas": [
+    {
+      "status": "publicado",
+      "dicas": [
+        "Use como recheio de tortas e coxinhas.",
+        "Apertar bem a jaca depois de lavar deixa a textura muito melhor."
+      ],
+      "tempo": "cerca de 1 hora",
+      "rendimento": "",
+      "obs": "",
+      "slug": "carne-de-jaca",
+      "titulo": "Carne de jaca",
+      "categoria": "Pratos principais",
+      "data": "2020-04-21",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/carne-de-jaca",
+      "resumo": "Jaca verde desfiada e refogada com azeitona, milho e ervilha. Serve como prato ou recheio de tortas e coxinhas.",
+      "ingredientes": [
+        "1 jaca verde",
+        "1/4 xícara (chá) de azeitona picada",
+        "1/2 xícara (chá) da água da azeitona",
+        "3 dentes de alho picados",
+        "1 cebola média picada",
+        "1/2 xícara (chá) de milho",
+        "1/2 xícara (chá) de ervilha",
+        "1 copo (200 ml) de molho de tomate",
+        "1/2 xícara (chá) de salsinha e cebolinha picadas",
+        "Sal e pimenta a gosto",
+        "Colorau (opcional)",
+        "## Para cozinhar a jaca (opcional)",
+        "Açafrão, curry, chimichurri, salsinha ou cebolinha"
+      ],
+      "preparo": [
+        "Unte as mãos e a faca com óleo, porque a seiva da jaca é muito pegajosa.",
+        "Corte a jaca em pedaços, coloque na panela de pressão e cubra com água. Se quiser, tempere a água com açafrão, curry, chimichurri ou ervas.",
+        "Depois que a panela pegar pressão, cozinhe por 15 minutos.",
+        "Espere sair todo o vapor, abra e escorra a água.",
+        "Retire a casca e desfie a jaca.",
+        "Lave a jaca desfiada e aperte bem para tirar toda a água. Reserve.",
+        "Em outra panela, refogue o alho e a cebola no óleo.",
+        "Junte a azeitona, a ervilha e o milho e refogue mais um pouco.",
+        "Acrescente a água da azeitona.",
+        "Adicione a jaca, o sal, a pimenta e o colorau (só se não tiver usado curry ou chimichurri no cozimento).",
+        "Quando borbulhar, junte a salsinha e a cebolinha.",
+        "Está pronta quando começar a soltar do fundo da panela."
+      ],
+      "id": "rec-carne-de-jaca",
+      "imagem": "/receitas/carne-de-jaca.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Troque a páprica defumada pela picante para um hambúrguer mais ardido."
+      ],
+      "tempo": "cerca de 50 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "hamburguer-de-couve-flor",
+      "titulo": "Hambúrguer de couve-flor",
+      "categoria": "Pratos principais",
+      "data": "2020-04-20",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/importância-do-café-da-manhã",
+      "resumo": "Hambúrguer de couve-flor temperado, com linhaça no lugar do ovo. Vai ao forno ou à frigideira.",
+      "ingredientes": [
+        "250 g de couve-flor crua (só os floretes)",
+        "3 colheres (sopa) de azeite",
+        "1/2 xícara de cebola picada",
+        "2 dentes de alho picados",
+        "1/4 colher (chá) de cominho em pó",
+        "1 colher (sopa) de orégano",
+        "1/4 colher (chá) de páprica defumada ou picante",
+        "1/2 colher (chá) de sal",
+        "1/4 xícara de salsinha e cebolinha picadas",
+        "1 colher (sopa) de suco de limão",
+        "1 colher (sopa) de linhaça",
+        "1/4 xícara de água",
+        "1/2 xícara de farinha de trigo integral ou de arroz"
+      ],
+      "preparo": [
+        "Processe a couve-flor até ficar bem miudinha.",
+        "Numa panela grande, aqueça 1 colher de azeite e doure levemente a cebola e o alho.",
+        "Junte a couve-flor, o sal, o orégano, o cominho e a páprica e cozinhe por 2 minutos.",
+        "Acrescente a salsinha, a cebolinha e o limão e desligue o fogo.",
+        "Enquanto esfria, triture a linhaça no liquidificador, junte a água e deixe descansar por 15 minutos.",
+        "Adicione as outras 2 colheres de azeite à linhaça e bata até virar um creme grosso e esbranquiçado.",
+        "Misture o creme de linhaça à couve-flor e acrescente a farinha para dar liga.",
+        "Modele os hambúrgueres e asse em assadeira untada a 200 °C por 25 minutos, virando na metade. Ou doure dos dois lados numa frigideira antiaderente com um fio de óleo."
+      ],
+      "id": "rec-hamburguer-de-couve-flor",
+      "imagem": "/receitas/hamburguer-de-couve-flor.webp"
+    },
+    {
+      "titulo": "Fricassê de palmito",
+      "categoria": "Pratos principais",
+      "resumo": "Palmito refogado com um molho cremoso de castanha de caju e milho, gratinado no forno.",
+      "tempo": "",
+      "rendimento": "",
+      "ingredientes": [
+        "## Recheio",
+        "Palmito desfiado",
+        "1 tomate picado",
+        "Cebola, alho, páprica defumada, curry, pimenta-do-reino e sal a gosto",
+        "## Molho",
+        "1 xícara de castanha de caju",
+        "1 1/2 xícara de milho",
+        "2 xícaras de água"
+      ],
+      "preparo": [
+        "Deixe a castanha de molho em água fervente por 20 minutos e lave bem.",
+        "Bata a castanha com 1 xícara de água. Junte o milho e mais 1 xícara de água e bata de novo.",
+        "Refogue o palmito com o tomate e os temperos. Junte o molho e misture.",
+        "Passe para um refratário e leve ao forno por 25 minutos.",
+        "Sirva com batata palha."
+      ],
+      "dicas": [],
+      "imagem": "/receitas/fricasse-de-palmito.webp",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/fricassê-de-palmito",
+      "status": "publicado",
+      "obs": "O post original não informa a quantidade de palmito nem a temperatura do forno.",
+      "slug": "fricasse-de-palmito",
+      "data": "2023-02-01",
+      "id": "rec-fricasse-de-palmito"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Para tirar o gosto de banana, deixe as cascas de molho em água com vinagre e sal antes de preparar."
+      ],
+      "tempo": "cerca de 50 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "file-de-casca-de-banana",
+      "titulo": "Filé de casca de banana",
+      "categoria": "Pratos principais",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/filé-de-casca-de-banana",
+      "resumo": "Casca de banana empanada e frita, crocante por fora. Aproveitamento integral da fruta.",
+      "ingredientes": [
+        "Cascas de 2 bananas-nanicas",
+        "1/2 xícara de farinha de trigo",
+        "4 colheres (sopa) cheias de amido de milho",
+        "1/4 xícara de água",
+        "1 dente de alho amassado",
+        "1 xícara de farinha de rosca",
+        "Sal a gosto",
+        "1 pitada de açafrão-da-terra",
+        "1 pitada de páprica picante",
+        "Óleo para fritar"
+      ],
+      "preparo": [
+        "Com a banana ainda inteira, esfregue bem a casca com uma escovinha de alimentos. Descasque e corte as pontas das cascas.",
+        "Tempere as cascas com o alho e uma pitada de sal e deixe descansar por 30 minutos.",
+        "Misture a água, o amido, o açafrão e a páprica. Passe as cascas nessa mistura e escorra o excesso.",
+        "Passe na farinha de trigo, de novo na mistura de amido e, por fim, na farinha de rosca.",
+        "Frite em óleo quente até dourar dos dois lados."
+      ],
+      "id": "rec-file-de-casca-de-banana",
+      "imagem": "/receitas/file-de-casca-de-banana.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "10 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "massa-de-panqueca",
+      "titulo": "Massa de panqueca",
+      "categoria": "Pães e massas",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/massa-de-panqueca",
+      "resumo": "Massa simples de panqueca, sem ovo e sem leite, com ingredientes que todo mundo tem em casa.",
+      "ingredientes": [
+        "1 1/2 xícara (chá) de água",
+        "8 colheres (sopa) de farinha de trigo",
+        "1 colher (sopa) de amido de milho",
+        "1 colher (sobremesa) de fermento em pó",
+        "1 colher (sopa) de azeite",
+        "Sal a gosto"
+      ],
+      "preparo": [
+        "Bata ou misture todos os ingredientes, menos o fermento, até a massa ficar lisa.",
+        "Junte o fermento e misture rapidamente, só até incorporar."
+      ],
+      "id": "rec-massa-de-panqueca",
+      "imagem": "/receitas/massa-de-panqueca.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "A massa é neutra: dá para fazer versões doces ou salgadas.",
+        "Dá para usar menos açúcar."
+      ],
+      "tempo": "cerca de 2 horas (com o crescimento)",
+      "rendimento": "",
+      "obs": "",
+      "slug": "pao-caseiro",
+      "titulo": "Pão caseiro sem leite e sem ovos",
+      "categoria": "Pães e massas",
+      "data": "2020-04-20",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/seu-estilo-de-vida-ceto-o-que-você-precisa-saber",
+      "resumo": "Massa neutra e leve, que vira pão doce ou salgado.",
+      "ingredientes": [
+        "500 ml de água",
+        "50 g de fermento biológico fresco (ou 2 saquinhos de fermento seco)",
+        "80 ml de óleo",
+        "6 colheres (sopa) de açúcar (pode reduzir)",
+        "1 colher (sopa) rasa de sal",
+        "Farinha de trigo até a massa desgrudar das mãos"
+      ],
+      "preparo": [
+        "Numa tigela, dissolva o fermento no açúcar. Junte o sal e os líquidos e misture bem.",
+        "Acrescente a farinha aos poucos até formar uma massa macia e sove bem.",
+        "Deixe descansar por cerca de 1 hora.",
+        "Divida a massa, modele como quiser, coloque nas formas e deixe crescer até dobrar de volume.",
+        "Asse em forno médio preaquecido a 200 °C por cerca de 30 minutos."
+      ],
+      "id": "rec-pao-caseiro",
+      "imagem": "/receitas/pao-caseiro.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "20 minutos + 2 horas de geladeira",
+      "rendimento": "",
+      "obs": "O post original lista o suco de limão, mas não diz em que etapa usar.",
+      "slug": "queijo-de-batata",
+      "titulo": "Queijo de batata",
+      "categoria": "Molhos e pastas",
+      "data": "2020-04-20",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/dicas-sobre-como-comprar-peixes",
+      "resumo": "Queijo vegetal de batata e polvilho que firma na geladeira.",
+      "ingredientes": [
+        "2 xícaras de polvilho azedo",
+        "2 batatas pequenas cozidas, com a água do cozimento",
+        "Suco de 1 limão",
+        "1/3 de xícara de óleo",
+        "Orégano e sal a gosto"
+      ],
+      "preparo": [
+        "Cozinhe as batatas e, ainda quentes, faça um purê com a água do cozimento.",
+        "Despeje o purê sobre o polvilho, junte o sal, o óleo e o orégano e amasse com as mãos.",
+        "Coloque num recipiente untado com óleo e leve à geladeira por 2 horas."
+      ],
+      "id": "rec-queijo-de-batata",
+      "imagem": "/receitas/queijo-de-batata.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "5 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "molho-de-alho",
+      "titulo": "Molho de alho",
+      "categoria": "Molhos e pastas",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/molho-de-alho",
+      "resumo": "Molho cremoso de alho com tofu e leite de coco, feito no liquidificador.",
+      "ingredientes": [
+        "1/2 xícara de leite de coco",
+        "2 dentes de alho",
+        "250 ml de azeite",
+        "250 g de tofu",
+        "Sal e orégano a gosto"
+      ],
+      "preparo": [
+        "Bata tudo no liquidificador até ficar cremoso."
+      ],
+      "id": "rec-molho-de-alho",
+      "imagem": "/receitas/molho-de-alho.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Dura cerca de 10 dias em pote de vidro e uns 6 dias em pote plástico na geladeira.",
+        "Troque a hortelã por alho ou outras ervas."
+      ],
+      "tempo": "20 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "pate-de-cenoura-com-hortela",
+      "titulo": "Patê de cenoura com hortelã",
+      "categoria": "Molhos e pastas",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/patê-de-cenoura-com-hortelã",
+      "resumo": "Patê leve e refrescante de cenoura, limão e hortelã.",
+      "ingredientes": [
+        "2 cenouras (1 média e 1 pequena)",
+        "1 fio de óleo",
+        "4 folhas de hortelã",
+        "Suco de 1/2 limão (ou mais, a gosto)",
+        "Sal a gosto",
+        "Água, se precisar"
+      ],
+      "preparo": [
+        "Cozinhe as cenouras até ficarem macias.",
+        "Bata com a hortelã, o óleo, o sal e o limão. Se o liquidificador tiver dificuldade, junte um pouco de água, sem deixar o patê ralo."
+      ],
+      "id": "rec-pate-de-cenoura-com-hortela",
+      "imagem": "/receitas/pate-de-cenoura-com-hortela.webp"
+    },
+    {
+      "titulo": "Maionese de couve-flor",
+      "categoria": "Molhos e pastas",
+      "resumo": "Maionese leve à base de couve-flor cozida e azeite.",
+      "tempo": "",
+      "rendimento": "",
+      "ingredientes": [
+        "400 g de couve-flor cozida e picada",
+        "1/2 xícara (chá) de azeite",
+        "1 colher (sopa) de suco de limão",
+        "1 dente de alho",
+        "Sal a gosto"
+      ],
+      "preparo": [
+        "Cozinhe a Couve-Flor até ficar macie e depois corte em pedaços para colocar no Processador junto com os condimentos até ficar homogênea."
+      ],
+      "dicas": [
+        "Use em saladas de batata e legumes."
+      ],
+      "imagem": "/receitas/maionese-de-couve-flor.webp",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/maionese-de-couve-flor",
+      "status": "publicado",
+      "obs": "",
+      "slug": "maionese-de-couve-flor",
+      "data": "2020-04-21",
+      "id": "rec-maionese-de-couve-flor"
+    },
+    {
+      "titulo": "Maionese de soja",
+      "categoria": "Molhos e pastas",
+      "resumo": "Maionese caseira de leite de soja, para temperar do seu jeito.",
+      "tempo": "10 minutos",
+      "rendimento": "",
+      "ingredientes": [
+        "1 copo de leite de soja",
+        "Óleo até dar consistência",
+        "Sal a gosto",
+        "Algumas gotas de limão",
+        "## Para temperar (opcional)",
+        "Azeitona preta, ervas finas, alho ou manjericão"
+      ],
+      "preparo": [
+        "Bata o leite de soja adicionando o óleo em fio até a mistura engrossar.",
+        "No meio do processo, junte o sal e as gotas de limão.",
+        "Com a maionese pronta, misture os temperos que quiser."
+      ],
+      "dicas": [],
+      "imagem": "/receitas/maionese-de-soja.webp",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/peixe-mediterrâneo-clássico",
+      "status": "publicado",
+      "obs": "O post original não diz se é batida no liquidificador ou com mixer, nem a quantidade de óleo.",
+      "slug": "maionese-de-soja",
+      "data": "2020-04-20",
+      "id": "rec-maionese-de-soja"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Algumas gotas de baunilha na hora de bater deixam o leite incrível."
+      ],
+      "tempo": "40 minutos",
+      "rendimento": "",
+      "obs": "",
+      "slug": "leite-de-coco",
+      "titulo": "Leite de coco caseiro",
+      "categoria": "Bebidas e leites vegetais",
+      "data": "2020-04-21",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/leite-de-coco",
+      "resumo": "Leite de coco feito em casa, a partir do coco seco.",
+      "ingredientes": [
+        "1 coco seco",
+        "1 litro de água",
+        "Algumas gotas de baunilha (opcional)"
+      ],
+      "preparo": [
+        "Tire a água do coco e reserve.",
+        "Quebre o coco, retire a polpa e descarte as cascas.",
+        "Pique a polpa, coloque no 1 litro de água e leve para ferver.",
+        "Deixe esfriar.",
+        "Bata tudo no liquidificador por 5 minutos.",
+        "Coe num pano limpo ou num voal (enxágue o pano antes, para não soltar fiapos)."
+      ],
+      "id": "rec-leite-de-coco",
+      "imagem": "/receitas/leite-de-coco.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Se quiser, junte gotas de baunilha na hora de bater."
+      ],
+      "tempo": "1 hora + 24 horas de molho",
+      "rendimento": "",
+      "obs": "",
+      "slug": "leite-de-soja",
+      "titulo": "Leite de soja caseiro",
+      "categoria": "Bebidas e leites vegetais",
+      "data": "2020-04-21",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/leitede-soja",
+      "resumo": "Leite vegetal de soja feito em casa, com o grão de molho de um dia para o outro.",
+      "ingredientes": [
+        "1 xícara de soja em grão",
+        "3 xícaras de água (para bater)",
+        "Água e gelo (para o molho)",
+        "Algumas gotas de baunilha (opcional)"
+      ],
+      "preparo": [
+        "Ferva a soja por 5 minutos, desligue o fogo e descarte a água.",
+        "Coloque a soja num recipiente com água e gelo e deixe na geladeira por 24 horas.",
+        "Bata 1 xícara da soja com 3 xícaras de água.",
+        "Ferva por 30 minutos.",
+        "Deixe esfriar e coe num voal ou pano de prato."
+      ],
+      "id": "rec-leite-de-soja",
+      "imagem": "/receitas/leite-de-soja.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "30 minutos + 3 horas de geladeira",
+      "rendimento": "",
+      "obs": "No post original a baunilha aparece nos ingredientes, mas não no preparo. Coloquei junto com o leite condensado.",
+      "slug": "pudidin",
+      "titulo": "Pudidin",
+      "categoria": "Doces",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/pudidin",
+      "resumo": "A versão vegana do pudim clássico, com leite de coco e ágar-ágar.",
+      "ingredientes": [
+        "1 xícara (chá) de açúcar demerara ou mascavo",
+        "350 ml de leite de coco",
+        "1 colher (chá) de ágar-ágar",
+        "200 ml de leite condensado vegetal da sua preferência",
+        "1 colher (sopa) de extrato de baunilha"
+      ],
+      "preparo": [
+        "Caramelize o açúcar no fogo, na própria forma de pudim.",
+        "Leve o leite de coco ao fogo baixo com o ágar-ágar e deixe ferver por 3 minutos.",
+        "Espere amornar e bata no liquidificador com o leite condensado e a baunilha até ficar homogêneo.",
+        "Despeje na forma caramelizada e leve à geladeira por pelo menos 3 horas."
+      ],
+      "id": "rec-pudidin",
+      "imagem": "/receitas/pudidin.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "30 minutos",
+      "rendimento": "",
+      "obs": "O post original não informa a temperatura do forno (normalmente 180 °C).",
+      "slug": "bolo-de-chocolate",
+      "titulo": "Bolo de chocolate",
+      "categoria": "Doces",
+      "data": "2020-04-20",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/gordura-boa-e-ruim",
+      "resumo": "Bolo de chocolate simples, sem ovo e sem leite.",
+      "ingredientes": [
+        "2 xícaras (chá) de farinha de trigo",
+        "1 1/2 xícara (chá) de açúcar",
+        "1 xícara (chá) de chocolate em pó",
+        "1 pitada de sal",
+        "1 colher (sopa) de fermento em pó",
+        "1 xícara (chá) de água",
+        "1/2 xícara (chá) de óleo"
+      ],
+      "preparo": [
+        "Misture os ingredientes secos.",
+        "Junte os líquidos e misture até ficar homogêneo.",
+        "Despeje numa forma e asse por cerca de 20 minutos."
+      ],
+      "id": "rec-bolo-de-chocolate",
+      "imagem": "/receitas/bolo-de-chocolate.webp"
+    },
+    {
+      "status": "publicado",
+      "dicas": [],
+      "tempo": "20 minutos",
+      "rendimento": "",
+      "obs": "O post original não explica o cozimento na frigideira (fogo e tempo).",
+      "slug": "bolo-de-chocolate-de-frigideira",
+      "titulo": "Bolo de chocolate de frigideira",
+      "categoria": "Doces",
+      "data": "2020-04-21",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/bobo-de-chocolate-de-frigideira",
+      "resumo": "Bolinho de chocolate rápido, feito na frigideira, com calda.",
+      "ingredientes": [
+        "## Bolo",
+        "4 colheres (sopa) de farinha de trigo",
+        "3 colheres (sopa) de açúcar",
+        "2 colheres (sopa) de cacau em pó ou achocolatado",
+        "1 pitada de sal",
+        "4 colheres (sopa) de leite vegetal (água também funciona)",
+        "3 colheres (sopa) de óleo",
+        "1 colher (sobremesa) de vinagre branco",
+        "1 colher (sobremesa) de fermento em pó",
+        "Opcional: 1 colher (sobremesa) de linhaça ou chia moída + 7 colheres (sobremesa) de água",
+        "## Calda",
+        "1 xícara de açúcar",
+        "1 xícara de chocolate em pó ou achocolatado",
+        "1/2 xícara de água"
+      ],
+      "preparo": [
+        "Misture os ingredientes secos, menos o fermento.",
+        "Junte os líquidos e mexa até a massa ficar lisa.",
+        "Acrescente o fermento e misture delicadamente, só até incorporar. Não mexa demais, senão o fermento perde o efeito.",
+        "Para a calda, leve tudo ao fogo até engrossar e despeje sobre o bolo."
+      ],
+      "id": "rec-bolo-de-chocolate-de-frigideira",
+      "imagem": "/receitas/bolo-de-chocolate-de-frigideira.webp"
+    },
+    {
+      "titulo": "Waffles",
+      "categoria": "Doces",
+      "resumo": "Waffles veganos com poucos ingredientes, para rechear do seu jeito.",
+      "tempo": "",
+      "rendimento": "",
+      "ingredientes": [
+        "1/4 xícara de óleo de girassol (ou outro óleo neutro, ou manteiga vegetal)",
+        "1 colher (sopa) de açúcar demerara (ou comum, mascavo ou de coco)",
+        "2 colheres (chá) de fermento em pó",
+        "1/2 colher (chá) de sal",
+        "1 xícara de farinha de trigo (ou 1/2 integral + 1/2 branca)",
+        "3/4 xícara de água"
+      ],
+      "preparo": [],
+      "dicas": [
+        "Junte à massa chocolate, canela, paçoca, banana, uva-passa ou frutas vermelhas.",
+        "1 colher (chá) de extrato de baunilha na massa deixa mais gostoso.",
+        "Sirva com geleia por cima.",
+        "Não esqueça o fermento!"
+      ],
+      "imagem": "/receitas/waffles.webp",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/waffles-waffous-wafous",
+      "status": "publicado",
+      "obs": "O post original não tem o modo de preparo. Complete antes de publicar.",
+      "slug": "waffles",
+      "data": "2023-02-01",
+      "id": "rec-waffles"
+    },
+    {
+      "status": "publicado",
+      "dicas": [
+        "Experimente com uma pitada de pimenta-caiena."
+      ],
+      "tempo": "15 minutos",
+      "rendimento": "",
+      "obs": "O post original não traz quantidades.",
+      "slug": "banana-caramelizada",
+      "titulo": "Banana caramelizada",
+      "categoria": "Doces",
+      "data": "2023-02-01",
+      "fonte": "https://conrado92.wixsite.com/hamucume/post/banana-caramelizada",
+      "resumo": "Banana cozida com especiarias e leite de coco até virar um doce cremoso.",
+      "ingredientes": [
+        "Banana",
+        "Açúcar",
+        "Noz-moscada",
+        "Açafrão-da-terra",
+        "Canela",
+        "Leite de coco",
+        "Aveia e coco (opcional)"
+      ],
+      "preparo": [
+        "Coloque tudo numa panela e leve ao fogo, mexendo.",
+        "Cozinhe até engrossar.",
+        "Se quiser, junte aveia e coco."
+      ],
+      "id": "rec-banana-caramelizada",
+      "imagem": "/receitas/banana-caramelizada.webp"
+    }
+  ]
+}

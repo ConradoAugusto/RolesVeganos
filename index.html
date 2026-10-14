@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="intro-ativa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Encontre restaurantes, cafés e lojas veganas na sua cidade, conheça a história do veganismo e descubra documentários." />
+    <meta name="theme-color" content="#0f2412" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preload" as="image" href="/logo-marca.webp" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <title>Rolês Veganos</title>
+
+    <!-- Animação de abertura. Fica aqui (e não no React) para aparecer no primeiro quadro. -->
+    <style>
+      html.intro-ativa, html.intro-ativa body { overflow: hidden; }
+      #intro {
+        position: fixed; inset: 0; z-index: 9999;
+        display: grid; place-items: center; align-content: center; gap: 28px;
+        background: radial-gradient(120% 90% at 50% 40%, #1f5c26 0%, #0f2412 62%);
+        color: #f6f4ea; font-family: Inter, system-ui, sans-serif;
+        clip-path: circle(150% at 50% 45%);
+        transition: clip-path 0.8s cubic-bezier(0.7, 0, 0.2, 1), opacity 0.5s ease 0.3s;
+        cursor: pointer;
+      }
+      #intro.saindo { clip-path: circle(0% at 50% 45%); opacity: 0; pointer-events: none; }
+      .intro-palco { position: relative; width: min(56vw, 260px); aspect-ratio: 1; display: grid; place-items: center; }
+      .intro-anel { position: absolute; inset: -14%; width: 128%; height: 128%; animation: intro-gira 6s linear infinite; }
+      .intro-anel circle {
+        fill: none; stroke: #9be564; stroke-width: 1.2; stroke-linecap: round;
+        stroke-dasharray: 302; stroke-dashoffset: 302;
+        animation: intro-traco 1s cubic-bezier(0.6, 0, 0.2, 1) 0.1s forwards;
+      }
+      .intro-anel circle + circle { stroke: rgba(155, 229, 100, 0.25); stroke-dasharray: 2 6; stroke-dashoffset: 0; animation: none; }
+      .intro-logo {
+        position: relative; width: 100%; height: auto;
+        filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.35));
+        opacity: 0; transform: scale(0.3) rotate(-14deg);
+        animation: intro-pula 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) 0.35s forwards, intro-balanca 3.2s ease-in-out 1.4s infinite;
+      }
+      .intro-folhas { position: absolute; inset: 0; pointer-events: none; }
+      .intro-folhas svg {
+        position: absolute; left: 50%; top: 50%; width: 26px; height: 26px; margin: -13px;
+        opacity: 0; transform: rotate(var(--a)) translateY(0) scale(0.2);
+        animation: intro-folha 1.3s cubic-bezier(0.2, 0.7, 0.2, 1) calc(0.75s + var(--d)) forwards;
+      }
+      .intro-frase { display: flex; flex-wrap: wrap; justify-content: center; gap: 0 0.32em; padding: 0 24px; font-size: clamp(1rem, 3.4vw, 1.25rem); letter-spacing: -0.01em; color: rgba(246, 244, 234, 0.86); }
+      .intro-frase span { display: inline-block; opacity: 0; transform: translateY(14px); animation: intro-sobe 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) calc(1.05s + var(--i) * 0.07s) forwards; }
+      .intro-frase em { font-family: "Instrument Serif", Georgia, serif; font-size: 1.25em; color: #9be564; font-style: italic; }
+      .intro-barra { width: 120px; height: 2px; border-radius: 2px; background: rgba(246, 244, 234, 0.15); overflow: hidden; }
+      .intro-barra span { display: block; height: 100%; width: 100%; background: #9be564; transform-origin: left; transform: scaleX(0); animation: intro-carrega 2.2s cubic-bezier(0.3, 0.6, 0.3, 1) forwards; }
+      #intro.saindo .intro-barra span { transform: scaleX(1); animation: none; transition: transform 0.2s; }
+      #intro.saindo .intro-logo { animation: none; opacity: 1; transform: scale(1.12); transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1); }
+      .intro-pular { position: absolute; right: 20px; bottom: 20px; background: none; border: 1px solid rgba(246, 244, 234, 0.25); color: rgba(246, 244, 234, 0.75); border-radius: 999px; padding: 6px 14px; font: inherit; font-size: 0.82rem; cursor: pointer; opacity: 0; animation: intro-sobe 0.4s ease 1.2s forwards; }
+      .intro-pular:hover { color: #fff; border-color: rgba(246, 244, 234, 0.6); }
+
+      /* Volta ao site na mesma sessão: só o loading curto */
+      #intro.rapido .intro-folhas, #intro.rapido .intro-frase, #intro.rapido .intro-pular { display: none; }
+      #intro.rapido .intro-palco { width: 120px; }
+      #intro.rapido .intro-logo { animation: intro-pula 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards, intro-respira 1.4s ease-in-out 0.5s infinite; }
+      #intro.rapido .intro-anel circle { animation-duration: 0.6s; animation-delay: 0s; }
+      #intro.rapido .intro-barra span { animation-duration: 0.8s; }
+
+      @keyframes intro-traco { to { stroke-dashoffset: 0; } }
+      @keyframes intro-gira { to { transform: rotate(360deg); } }
+      @keyframes intro-pula { to { opacity: 1; transform: scale(1) rotate(0); } }
+      @keyframes intro-balanca { 0%, 100% { transform: rotate(0) translateY(0); } 50% { transform: rotate(-2.5deg) translateY(-4px); } }
+      @keyframes intro-respira { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+      @keyframes intro-sobe { to { opacity: 1; transform: none; } }
+      @keyframes intro-carrega { to { transform: scaleX(0.85); } }
+      @keyframes intro-folha {
+        0% { opacity: 0; transform: rotate(var(--a)) translateY(0) scale(0.2); }
+        25% { opacity: 1; }
+        100% { opacity: 0; transform: rotate(var(--a)) translateY(calc(-1 * var(--r))) rotate(var(--g)) scale(1); }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #intro, #intro * { animation-duration: 0.01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important; transition-duration: 0.2s !important; }
+        #intro.saindo { clip-path: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="intro" role="presentation">
+      <div class="intro-palco">
+        <svg class="intro-anel" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="48" transform="rotate(-90 50 50)" />
+          <circle cx="50" cy="50" r="44" />
+        </svg>
+        <div class="intro-folhas" aria-hidden="true"></div>
+        <img class="intro-logo" src="/logo-marca.webp" alt="Rolês Veganos" width="260" height="260" />
+      </div>
+      <p class="intro-frase" aria-hidden="true"></p>
+      <div class="intro-barra" aria-hidden="true"><span></span></div>
+      <button class="intro-pular" type="button">Pular</button>
+    </div>
+    <script>
+      (function () {
+        var el = document.getElementById("intro");
+        var visto = false;
+        try { visto = sessionStorage.getItem("rv-intro") === "1"; } catch (e) {}
+        if (visto) el.classList.add("rapido");
+
+        // Folhas que explodem em volta do mascote
+        var folhas = el.querySelector(".intro-folhas");
+        var cores = ["#9be564", "#4caf3a", "#c5f29a", "#2e7d32"];
+        for (var i = 0; i < 10; i++) {
+          folhas.insertAdjacentHTML("beforeend",
+            '<svg viewBox="0 0 24 24" style="--a:' + (i * 36 + Math.round(Math.random() * 14)) + 'deg;--r:' + (130 + Math.round(Math.random() * 70)) +
+            'px;--g:' + (Math.round(Math.random() * 240) - 120) + 'deg;--d:' + (i % 3) * 0.06 + 's"><path fill="' + cores[i % 4] +
+            '" d="M12 2C5 7 4 14 7 21c9-2 13-10 5-19Z"/><path d="M8 19c1.5-5 3-9 4-14" stroke="rgba(0,0,0,.25)" stroke-width="1" fill="none"/></svg>');
+        }
+
+        // Frase palavra por palavra
+        var frase = el.querySelector(".intro-frase");
+        "Seu próximo|<em>rolê vegano</em>|começa aqui.".split("|").forEach(function (parte) {
+          var pedacos = /<em>/.test(parte) ? [parte] : parte.split(" ");
+          pedacos.forEach(function (p) {
+            frase.insertAdjacentHTML("beforeend", '<span style="--i:' + frase.children.length + '">' + p + "</span>");
+          });
+        });
+
+        var t0 = performance.now();
+        var minimo = visto ? 450 : 2300;
+        function sair() {
+          if (el.classList.contains("saindo")) return;
+          el.classList.add("saindo");
+          try { sessionStorage.setItem("rv-intro", "1"); } catch (e) {}
+          setTimeout(function () {
+            el.remove();
+            document.documentElement.classList.remove("intro-ativa");
+          }, 850);
+        }
+        window.__rvPronto = function () {
+          setTimeout(sair, Math.max(0, minimo - (performance.now() - t0)));
+        };
+        el.addEventListener("click", sair);
+        document.addEventListener("keydown", function (e) { if (e.key === "Escape") sair(); });
+        setTimeout(sair, 7000); // segurança, caso o app demore ou falhe
+      })();
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
