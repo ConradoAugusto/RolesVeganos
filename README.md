@@ -1,6 +1,6 @@
 # Rolês Veganos (React)
 
-Guia de lugares veganos por cidade, com mapa gratuito (OpenStreetMap), história do veganismo, documentários, receitas, blog, cupons e painel de gestão. Feito com React, Vite, React Router e Leaflet, com backend no Supabase.
+Guia de lugares veganos por cidade, com mapa gratuito (OpenStreetMap), história do veganismo, documentários, receitas, blog, cupons e painel de gestão. Feito com React, Vite, React Router e Leaflet. Não tem backend: todo o conteúdo fica em `src/data/dados.json`, embutido no site.
 
 ## Como rodar
 
@@ -11,52 +11,13 @@ npm run dev
 
 Produção: `npm run build` (saída em `dist/`).
 
-O site tem dois modos:
+## Publicar de graça (Vercel)
 
-- **Com servidor (Supabase):** quando `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` estão configuradas. Login real, edições salvas na hora para todo mundo, avaliações e comentários dos visitantes chegam ao painel e as imagens ficam no Supabase Storage.
-- **Local:** sem essas variáveis. O conteúdo vem de `src/data/dados.json` e as edições ficam no navegador (veja "Modo local" no fim).
+1. Suba o projeto para um repositório **privado** no GitHub.
+2. Em [vercel.com](https://vercel.com), clique em **Add New > Project** e importe o repositório. A Vercel reconhece o Vite sozinha.
+3. Clique em **Deploy**. Não precisa de variável de ambiente.
 
-## Publicar de graça (Vercel + Supabase)
-
-### 1. Supabase (banco, login e imagens)
-
-1. Crie uma conta em [supabase.com](https://supabase.com) e um projeto novo (plano Free). Guarde a senha do banco.
-2. Em **SQL Editor > New query**, cole todo o arquivo `supabase/schema.sql` e clique em **Run**.
-3. Em **Authentication > Users > Add user > Create new user**, crie o seu usuário de admin (e-mail e senha). Marque **Auto Confirm User**.
-4. De volta ao **SQL Editor**, rode (trocando o e-mail):
-   ```sql
-   insert into public.admins (user_id) select id from auth.users where email = 'seu@email.com';
-   ```
-5. Em **Project Settings > API**, copie a **Project URL** e a chave **anon public**.
-
-### 2. GitHub
-
-1. Crie um repositório **privado** em [github.com/new](https://github.com/new) (sem README).
-2. No terminal, dentro da pasta do projeto:
-   ```bash
-   git remote add origin https://github.com/SEU_USUARIO/roles-veganos.git
-   git push -u origin main
-   ```
-
-### 3. Vercel (site)
-
-1. Entre em [vercel.com](https://vercel.com) com a conta do GitHub e clique em **Add New > Project**.
-2. Importe o repositório. A Vercel reconhece o Vite sozinha.
-3. Em **Environment Variables**, cadastre `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY` com os valores do passo 1.5.
-4. Clique em **Deploy**. Em cerca de 1 minuto o site fica no ar em `https://seu-projeto.vercel.app`.
-5. No Supabase, em **Authentication > URL Configuration**, coloque esse endereço em **Site URL**.
-
-### 4. Primeira vez no site publicado
-
-1. Abra `https://seu-projeto.vercel.app/acesso` e entre com o usuário criado no Supabase.
-2. Vá em **Gestão > Configurações** e clique em **Enviar conteúdo atual para o servidor**. Isso copia os lugares, receitas, artigos, documentários e cupons do `dados.json` para o banco.
-3. Pronto: a partir daí, cada edição no painel é salva sozinha e aparece na hora para todo mundo.
-
-Para atualizar o código depois: `git add -A && git commit -m "..." && git push`. A Vercel publica de novo sozinha.
-
-Para rodar no seu computador ligado ao mesmo banco, copie `.env.example` para `.env` e preencha as duas variáveis.
-
-**Limites do plano gratuito:** o Supabase Free pausa o projeto depois de 7 dias sem nenhum acesso (é só abrir o painel do Supabase e clicar em "Restore"). Tem 500 MB de banco e 1 GB de imagens, o que sobra para este site. A Vercel Hobby é para uso pessoal e não comercial.
+Para atualizar: `git add -A && git commit -m "..." && git push`. A Vercel publica de novo sozinha.
 
 ## Mapa e localização (gratuitos, sem chave)
 
@@ -99,9 +60,9 @@ O lugar também tem um botão **Editar**, que aparece só para o admin.
 
 O e-mail e a senha do admin ficam em `src/data/dados.json` (a senha só como hash SHA-256). Para trocar, use Gestão > Configurações > Minha conta e exporte os dados.
 
-## Modo local (sem Supabase)
+## Como publicar o que você editou
 
-Sem as variáveis do Supabase, o que você edita no painel fica salvo **só no seu navegador**. Para todo mundo ver (com `npm run dev`, use também o botão **Salvar no projeto**):
+O que você edita no painel fica salvo **só no seu navegador**. Para todo mundo ver (com `npm run dev`, use também o botão **Salvar no projeto**):
 
 1. Painel > Configurações > **Exportar dados**. Isso baixa o arquivo `dados.json`.
 2. Substitua `src/data/dados.json` por esse arquivo.
@@ -118,7 +79,7 @@ O arquivo tem um número de versão. Quando um visitante abre o site publicado c
 
 ## Limites atuais (importante)
 
-- **No modo local, o login não é segurança de verdade** e as avaliações e comentários dos visitantes ficam só no navegador de quem escreveu. Com o Supabase configurado, os dois problemas deixam de existir: o login é real e as regras do `supabase/schema.sql` só deixam o admin editar o conteúdo.
-- **O `dados.json` guarda o e-mail e o hash da senha do modo local.** Mantenha o repositório do GitHub **privado**. Depois de migrar para o Supabase, esse login local deixa de ser usado.
+- **O login não é segurança de verdade**: sem servidor, qualquer pessoa com conhecimento técnico consegue mexer nos dados do próprio navegador. Avaliações e comentários dos visitantes ficam só no navegador de quem escreveu.
+- **O `dados.json` guarda o e-mail e o hash da senha do admin.** Mantenha o repositório do GitHub **privado**.
 - **O formulário de contato não envia nada.** Ligue a um serviço como o Formspree.
 - Os seis lugares "Exemplo" e os três cupons "Exemplo" (rascunho) são fictícios. Exclua-os quando cadastrar os reais.

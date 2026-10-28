@@ -1,6 +1,389 @@
 {
-  "versao": 1792008084879,
+  "versao": 1792015366148,
   "places": [
+    {
+      "id": "mv8m0tibkrph",
+      "nota": 0,
+      "nome": "Dona Augusta Vegan",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Lanchonete",
+        "Bar",
+        "Hot dog"
+      ],
+      "descricao": "Lanchonete e bar vegano na Rua Augusta com clássicos brasileiros em versão vegetal: dogão paulistano, coxinha, sanduíches, milk-shake e cerveja. Porções grandes e preço acessível.",
+      "endereco": "Rua Augusta, 1112 — Consolação",
+      "cidade": "São Paulo",
+      "lat": -23.5540884,
+      "lng": -46.6560693,
+      "horario": "Ter a dom, a partir das 13h (seg fechado)",
+      "telefone": "(11) 96895-9846",
+      "site": "",
+      "imagem": "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QtSD5PVZ7ff5Dgcq5LHjkXfHnsKAUmDr-WA-eQlQBAv6qQmtSo8zz0-QVYcrzLV_mtNwz14bfFQYHuuLI0X8weSYtAG8NWgFSJbEw0xAd3dGlFvhAsjaTDf83efceQcqBp0pb-pYDseMSF=s1360-w1360-h1020-rw",
+      "redes": {},
+      "notaGoogle": 4.8,
+      "totalGoogle": 1295,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8m0ci32gj0",
+      "nota": 0,
+      "nome": "Lar Vegan",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Buffet",
+        "Pizzaria",
+        "Espaço cultural",
+        "Coworking"
+      ],
+      "descricao": "Restaurante, pizzaria e espaço cultural 100% vegano em uma casa grande na Água Branca: buffet, café da manhã, pizzas e lojinha de produtos veganos. Tem Wi-Fi, coworking, terraço e estacionamento.",
+      "endereco": "Rua Clélia, 286 — Água Branca",
+      "cidade": "São Paulo",
+      "lat": -23.5248053,
+      "lng": -46.6852101,
+      "horario": "Seg a sáb, 9h às 22h; dom, 9h às 17h40",
+      "telefone": "(11) 95150-8672",
+      "site": "https://linktr.ee/larvegan",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWUe936tY1TbacGRCQpSrg7lMFji2M7_gDfq6RYtmjQdZJSh3_qtgie4ER&s=10",
+      "redes": {},
+      "notaGoogle": 4.7,
+      "totalGoogle": 3131,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lztbzjufq",
+      "nota": 0,
+      "nome": "Pop Vegan Food — Consolação",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Buffet",
+        "Rodízio de pizza",
+        "Barato"
+      ],
+      "descricao": "Restaurante 100% vegano e popular na Consolação: buffet livre no almoço e rodízio de pizzas doces e salgadas à noite, além de pratos à la carte e burgers. Preço acessível e costuma lotar. A rede tem outras unidades em SP.",
+      "endereco": "Rua Fernando de Albuquerque, 142 — Consolação",
+      "cidade": "São Paulo",
+      "lat": -23.5538714,
+      "lng": -46.6576545,
+      "horario": "Seg a sex, 11h15-14h45 e 17h30-22h30; sáb, 11h30-15h45 e 17h30-23h; dom, 17h30-22h30",
+      "telefone": "(11) 2157-4358",
+      "site": "https://popveganfood.com.br/",
+      "imagem": "https://popveganfood.com.br/wp-content/uploads/2022/10/POP_logo.png",
+      "redes": {},
+      "notaGoogle": 4.7,
+      "totalGoogle": 12464,
+      "cor": "#000000",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lz83wq3sk",
+      "nota": 0,
+      "nome": "Purana.co",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Sem glúten",
+        "Café da manhã"
+      ],
+      "descricao": "Restaurante 100% vegano e sem glúten em Pinheiros, com clima de refúgio: café da manhã, almoço, drinks e sobremesas (como bolo de cupuaçu). Tem cardápio em inglês e espaços para yoga e reuniões.",
+      "endereco": "Rua Cônego Eugênio Leite, 840 — Pinheiros",
+      "cidade": "São Paulo",
+      "lat": -23.5617525,
+      "lng": -46.68195,
+      "horario": "Todos os dias, 8h às 19h",
+      "telefone": "(11) 95225-8606",
+      "site": "https://linktr.ee/purana.co",
+      "imagem": "data:image/png;base64,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",
+      "redes": {},
+      "notaGoogle": 4.6,
+      "totalGoogle": 1681,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lyl6iz9j8",
+      "nota": 0,
+      "nome": "Sushimar Vegano",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Japonesa",
+        "Sushi",
+        "Rodízio"
+      ],
+      "descricao": "Restaurante japonês 100% vegano nos Jardins, com rodízio e pratos à la carte: sushis (como o de \"atum do futuro\"), guioza, trouxinhas, espetinhos e yakissoba. Casa pequena — chegue cedo ou reserve.",
+      "endereco": "Alameda Campinas, 1287 — Jardins",
+      "cidade": "São Paulo",
+      "lat": -23.571219,
+      "lng": -46.658306,
+      "horario": "Ter a sex, 12h-15h e 19h-23h; sáb, 12h-16h e 19h-23h; dom, 12h-16h",
+      "telefone": "(11) 3889-0497",
+      "site": "https://linktr.ee/sushimarvegano",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/23417109_1464277006960063_7422676714192371712_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4zODIuQzMifQ%3D%3D&_nc_ohc=4c4H58lI0OYQ7kNvwHlRir0&_nc_oc=AdrBpnf7tePWtncIL3NzVsNZN-7nZ1P_6y_ZloGsltLKWs91DCGZRkrdNxW5X6-xvfcUHrF0oUJ2At_o5aHGm5Bm&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQOhYm6Ajjg63Q2zJS9RRBd-U224XLtLf2WxusvmCsPjjA&oe=6AD5AB36",
+      "redes": {
+        "instagram": "@sushimarvegano"
+      },
+      "notaGoogle": 4.5,
+      "totalGoogle": 2772,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lxkcuj78m",
+      "nota": 0,
+      "nome": "The Boinas",
+      "tipo": "Café",
+      "tags": [
+        "100% vegano",
+        "Churros",
+        "Café"
+      ],
+      "descricao": "Cafeteria 100% vegana na Vila Romana famosa pelos churros (doces e salgados), além de lanches como o parmeggio, pão de queijo vegano, capuccino e chocolate quente. Costuma ter eventos.",
+      "endereco": "Rua Coriolano, 969 — Vila Romana",
+      "cidade": "São Paulo",
+      "lat": -23.5262119,
+      "lng": -46.6949501,
+      "horario": "Qua a dom, 12h às 18h",
+      "telefone": "(11) 93202-6428",
+      "site": "https://theboinas.menuintegrado.com.br/",
+      "imagem": "https://assets.menuintegrado.com/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NTg2MDAxMCwicHVyIjoiYmxvYl9pZCJ9fQ==--955f42423904019d7173437dee1cad68fbae4d20/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJqcGciLCJyZXNpemVfdG9fZmlsbCI6WzMyMCwzMjBdfSwicHVyIjoidmFyaWF0aW9uIn19--f15ccb2a954827ae230a27656c95bacd760cd740/20240227_133444_0000.jpg",
+      "redes": {
+        "instagram": "@theboinas"
+      },
+      "notaGoogle": 4.8,
+      "totalGoogle": 452,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lx1rs5bho",
+      "nota": 0,
+      "nome": "Vovó Vegana",
+      "tipo": "Padaria",
+      "tags": [
+        "100% vegano",
+        "Confeitaria",
+        "Bolos",
+        "Encomendas"
+      ],
+      "descricao": "Confeitaria vegana conhecida pelos bolos de festa, tortas (banoffee, holandesa) e pão de mel. Trabalha principalmente com encomendas e entregas.",
+      "endereco": "Rua Apamas, 44 — Indianópolis",
+      "cidade": "São Paulo",
+      "lat": -23.6116579,
+      "lng": -46.6645904,
+      "horario": "Seg a sáb, 9h às 17h",
+      "telefone": "(11) 2384-5787",
+      "site": "https://www.vovovegana.com.br/",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/340495094_1384603032335505_1322914755305451847_n.jpg?_nc_cat=106&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41NjAuQzMifQ%3D%3D&_nc_ohc=xxSxl9gH3lQQ7kNvwFNZckV&_nc_oc=Adoutk_SIrsYOh9W2Wn3_04uyPGthKqhWXjmWCNr77tpsRurtFwkzWZ18znyXKrn4daPGV6ZiWPIzxrITKcL2TX0&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQNPyvnAtItJ2dkkp3DL9JHUvpJX37abfxvnLRvOx0jW8w&oe=6AD5AAD9",
+      "redes": {
+        "instagram": "@vovovegana"
+      },
+      "notaGoogle": 4.8,
+      "totalGoogle": 646,
+      "cor": "#0bc193",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lw2nxbhp2",
+      "nota": 0,
+      "nome": "VegSim Empório Vegano — Moema",
+      "tipo": "Loja",
+      "tags": [
+        "100% vegano",
+        "Empório",
+        "Mercado",
+        "Café"
+      ],
+      "descricao": "Mercado 100% vegano com queijos vegetais, congelados, massas, grãos, leites e chocolates. A unidade de Moema tem café com salgados (coxinha de jaca), quiches, mini pizzas e sorvete vegano. A rede também tem loja na Mooca.",
+      "endereco": "Rua Canário, 611 — Indianópolis (Moema)",
+      "cidade": "São Paulo",
+      "lat": -23.6011431,
+      "lng": -46.6666327,
+      "horario": "Seg a sáb, 8h às 20h; dom, 9h às 18h",
+      "telefone": "(11) 96596-1131",
+      "site": "https://www.vegsim.com.br/",
+      "imagem": "https://imageswscdn.wslojas.com.br/files/26706/PROD_356433651725.png?20261005121349",
+      "redes": {
+        "instagram": "@vegsim_br"
+      },
+      "notaGoogle": 4.7,
+      "totalGoogle": 141,
+      "cor": "#ffffff",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lvksirg71",
+      "nota": 0,
+      "nome": "Padoca Vegan",
+      "tipo": "Padaria",
+      "tags": [
+        "100% vegano",
+        "Padaria",
+        "Café da manhã"
+      ],
+      "descricao": "Padaria 100% vegana no Sumarezinho: pães, coxinhas, donuts, sanduíches, tofu mexido e cafés com leite vegetal. Nos fins de semana tem buffet no almoço.",
+      "endereco": "Rua Harmonia, 1275 — Sumarezinho",
+      "cidade": "São Paulo",
+      "lat": -23.5476021,
+      "lng": -46.6919478,
+      "horario": "Todos os dias, 7h às 20h",
+      "telefone": "(11) 2503-5930",
+      "site": "https://linktr.ee/padocavegan",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/44000095_356208581612838_7210426718983553024_n.jpg?_nc_cat=101&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40ODguQzMifQ%3D%3D&_nc_ohc=7f_nYVh_ciMQ7kNvwEctYMg&_nc_oc=AdrPlk5osyMkLdXZQQsaMfNTngfBy10sEKg80tB4AtNDzTupdHg9jgLSZe8K1s9KbSH6VSDpVs_HSbUvyS8_3wIs&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQNDMZPageBW1aOgRKoYrEAm_dlcg4xKqvJ9uHzkGuMlLQ&oe=6AD5B8BA",
+      "redes": {
+        "instagram": "@padocavegan"
+      },
+      "notaGoogle": 4.6,
+      "totalGoogle": 1341,
+      "cor": "#ffffff",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lv35136wh",
+      "nota": 0,
+      "nome": "Piccoli Cucina",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Italiana",
+        "Massas"
+      ],
+      "descricao": "Cantina italiana 100% vegana em Pinheiros, com cozinha de vidro: massas frescas, nhoque, ravióli, coxinha e sobremesas como bolo de pistache. Tem menu executivo no almoço.",
+      "endereco": "Rua Francisco Leitão, 272 — Pinheiros",
+      "cidade": "São Paulo",
+      "lat": -23.5621408,
+      "lng": -46.6804466,
+      "horario": "Todos os dias, 12h às 23h",
+      "telefone": "(11) 97508-5494",
+      "site": "https://linktr.ee/piccolicucinaitalianfood",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/434016658_976986603845800_2581553718300521431_n.jpg?_nc_cat=105&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40NzQuQzMifQ%3D%3D&_nc_ohc=H1X5csHMqWMQ7kNvwEyqmon&_nc_oc=AdrEhGaWjX6Q5coOQHyM4V9hPSBC7sa7UgeTqE0BAdglTONGIPuAklzXYXOeopfmJ56Ocb2btz5WAC3xk0Eote4C&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQP8Y_CE0-sJk4rmk-ZgB2cFUrP1a48z5cbbnkOTepXCIg&oe=6AD5BB53",
+      "redes": {
+        "instagram": "@piccolicucina"
+      },
+      "notaGoogle": 4.5,
+      "totalGoogle": 2015,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8luklt98tc",
+      "nota": 0,
+      "nome": "Jaca Bô-Ah",
+      "tipo": "Padaria",
+      "tags": [
+        "100% vegano",
+        "Confeitaria",
+        "Café",
+        "Delivery"
+      ],
+      "descricao": "Confeitaria e café 100% vegano em Santa Cecília: croissants folhados, quiches, tortas, sanduíches e cafés especiais. Também entrega por app.",
+      "endereco": "Rua Tupi, 177 — Santa Cecília",
+      "cidade": "São Paulo",
+      "lat": -23.5333549,
+      "lng": -46.6604712,
+      "horario": "Qua a dom, 10h às 17h",
+      "telefone": "(11) 99818-9988",
+      "site": "https://linktr.ee/jacaboah",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/150943050_111278430978598_4594627905964131032_n.jpg?_nc_cat=109&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy40NTkuQzMifQ%3D%3D&_nc_ohc=A-jctsZ-9LYQ7kNvwEkFKpS&_nc_oc=AdpgAZbMZdcxu6759Kx5Mt3NbOs6LsmPzCMQKkVvj_hiDN6PJ_Dms7tGNrJoTTfhSS4g7sDBl39fsi5whL9GqL-2&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQMtOPoIDFVoZD8czaQKuHReHgnzks9UdvtAxTLI1qXzCg&oe=6AD5DE2C",
+      "redes": {
+        "instagram": "@jacaboah"
+      },
+      "notaGoogle": 4.7,
+      "totalGoogle": 246,
+      "cor": "#000000",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lrbku2pqp",
+      "nota": 0,
+      "nome": "Empório Haisai",
+      "tipo": "Loja",
+      "tags": [
+        "Opções veganas",
+        "Convencional",
+        "Comida oriental",
+        "Empório"
+      ],
+      "descricao": "Empório de produtos orientais (principalmente japoneses) com comida pronta feita no dia: yakissoba, takoyaki e outros. Não é vegano, mas tem salgados veganos pré-prontos, como coxinha e esfiha. Pergunte quais itens são veganos.",
+      "endereco": "Rua Boa Morte, 1862 — Centro",
+      "cidade": "Piracicaba",
+      "lat": -22.7322504,
+      "lng": -47.6536366,
+      "horario": "Seg a sex, 8h30 às 18h; sáb, 8h30 às 14h",
+      "telefone": "(19) 3432-4651",
+      "site": "https://api.whatsapp.com/send?phone=5519993683586&text=Ol%C3%A1!%20Tudo%20bem%3F%0AGostaria%20de%20uma%20ajuda.%0A*(%20OU%20REESCREVA%20SUA%20MENSAGEM)*",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/67575991_483476875779842_6996919973394251776_n.jpg?_nc_cat=102&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy4xMDgwLkMzIn0%3D&_nc_ohc=RMeApsRG7fQQ7kNvwEt8-5Z&_nc_oc=AdphDICCJ27LGOU49b93g5xnOY4fB_z4ZwzHGYZpM3QUyxVIZ-BAeH5tKCdUsQ9WxkBevymah6078SjCsWybMxg-&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQOARW0ynvEVC--VagcSAOt3GxZQolBXI32VQ_s2J61Azw&oe=6AD5CB6A",
+      "redes": {
+        "instagram": "@emporio.haisai"
+      },
+      "notaGoogle": 4.9,
+      "totalGoogle": 485,
+      "cor": "#ffffff",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lqbe9hblp",
+      "nota": 0,
+      "nome": "Espaço Viva com Ciência",
+      "tipo": "Restaurante",
+      "tags": [
+        "100% vegano",
+        "Eventos",
+        "Marmitas",
+        "Congelados",
+        "Encomendas"
+      ],
+      "descricao": "Espaço 100% vegano em chácara rústica no bairro Dois Córregos. Faz eventos (aniversários, casamentos, corporativos), buffet, pizza, salgados, marmitas, congelados e encomendas — tudo só com ingredientes vegetais. Tem estacionamento, área kids e acessibilidade. Ligue antes para confirmar o funcionamento.",
+      "endereco": "Rua José Benitez Gregório, 600 — Dois Córregos",
+      "cidade": "Piracicaba",
+      "lat": -22.7467216,
+      "lng": -47.6090407,
+      "horario": "Seg a sex, 8h às 17h; sáb, 9h às 13h",
+      "telefone": "(19) 99696-0086",
+      "site": "https://www.espacovivacomciencia.com.br/",
+      "imagem": "https://irp.cdn-website.com/c833b2b7/dms3rep/multi/opt/logo-288w.png",
+      "redes": {
+        "whatsapp": "19996960086",
+        "instagram": "@EspacoVivaComCiencia"
+      },
+      "notaGoogle": 4.7,
+      "totalGoogle": 329,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
+    {
+      "id": "mv8lop0gx0p6",
+      "nota": 0,
+      "nome": "Klaus Burguer",
+      "tipo": "Restaurante",
+      "tags": [
+        "Opções veganas",
+        "Opções vegetarianas",
+        "Convencional",
+        "Hamburgueria"
+      ],
+      "descricao": "Lanchonete convencional com uma das maiores variedades de lanches vegetarianos e veganos da cidade: burgers, hot dogs, coxinha de jaca, espetinho de 'vrango' e substituições veganas. Também serve carne — confirme se o item é vegano ao pedir.",
+      "endereco": "Rua Saldanha Marinho, 2787 — Alemães",
+      "cidade": "Piracicaba",
+      "lat": -22.7244667,
+      "lng": -47.6269814,
+      "horario": "Ter a sáb, 18h às 23h",
+      "telefone": "(19) 97410-4103",
+      "site": "https://klausburguer.goomer.app/",
+      "imagem": "https://instagram.fcpq5-1.fna.fbcdn.net/v/t51.2885-19/203963399_2947098122170716_7274714355867129665_n.jpg?_nc_cat=110&_nc_map=urlgen_bucketless&ccb=7-5&_nc_sid=bf7eb4&efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLnd3dy41MjMuQzMifQ%3D%3D&_nc_ohc=GutD0Mb6IXwQ7kNvwHP_0b2&_nc_oc=Ado9eFD3hSbiC0K4a5dgopNVtQHlLNK85ubtIj6IR1h1fyE4Nmu22NozLx8CxdHxpvZ8WkHebKCGW52VE_Dcw_yf&_nc_zt=24&_nc_ht=instagram.fcpq5-1.fna&_nc_ss=7b6a8&oh=00_AQNdIAV5VIEixY_C-SjNdjrw2-iVvFztk7mwBtp4q9s8-Q&oe=6AD5C175",
+      "redes": {
+        "instagram": "@klausburguer"
+      },
+      "notaGoogle": 4.7,
+      "totalGoogle": 405,
+      "cor": "#2e7d32",
+      "status": "aprovado"
+    },
     {
       "nota": 0,
       "telefone": "(19) 3432-2888",
@@ -217,7 +600,17 @@
       }
     }
   ],
-  "reviews": [],
+  "reviews": [
+    {
+      "id": "mv8k9plm1ovn",
+      "placeId": "pira-gorilla",
+      "userName": "Conrado Augusto",
+      "nota": 5,
+      "texto": "Sensacional!!!\nLanches, Bolos  e o Café da manhã deles é divino",
+      "data": "2026-10-14",
+      "status": "aprovado"
+    }
+  ],
   "posts": [
     {
       "titulo": "Como fazer a transição para o veganismo sem ficar anêmico",
@@ -413,7 +806,7 @@
   "cupons": [
     {
       "loja": "Rakkau",
-      "descricao": "Adicione os produtos ao carrinho e aplique o cupom para ter 40% de desconto.",
+      "descricao": "Rakkau é uma marca brasileira especializada em suplementos proteicos veganos e de origem vegetal, focada em nutrição esportiva e estilo de vida sustentável.\n\nAdicione os produtos ao carrinho e aplique o cupom para ter 40% de desconto.",
       "codigo": "ROLESVEGANOS",
       "desconto": "40% de Desconto",
       "link": "https://www.rakkau.com.br/",

@@ -1,26 +1,9 @@
-import { createContext, useCallback, useContext, useEffect, useMemo, useReducer, useRef, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useMemo, useReducer, useState } from "react";
 import { SEED } from "../data/seed";
-import * as backend from "../lib/backend";
 
 const KEY = "rv-react-v2";
-const KEY_FAVORITOS = "rv-favoritos";
-const temBackend = backend.temBackend;
-
-// Ações que mudam o conteúdo editado pelo admin (vai para a tabela "conteudo")
-const ACOES_CONTEUDO = /^(place|post|doc|cupom|receita)\/|^data\/replace$/;
 
 function carregar() {
-  if (temBackend) {
-    // Com servidor: mostra o dados.json na hora e troca pelo conteúdo do servidor assim que chegar.
-    // Do navegador só vêm os lugares salvos (coração).
-    let favorites = [];
-    try {
-      favorites = JSON.parse(localStorage.getItem(KEY_FAVORITOS)) || [];
-    } catch (e) {
-      /* sem favoritos salvos */
-    }
-    return { ...structuredClone(SEED), favorites };
-  }
   try {
     const raw = localStorage.getItem(KEY);
     if (raw) {
@@ -109,8 +92,6 @@ function reducer(s, a) {
       return { ...s, versao: a.versao };
     case "session/set":
       return { ...s, session: a.userId };
-    case "servidor/carregar":
-      return { ...s, ...(a.conteudo || {}), reviews: a.reviews, comments: a.comments };
     default:
       return s;
   }
@@ -119,18 +100,12 @@ function reducer(s, a) {
 const Ctx = createContext(null);
 
 export function AppProvider({ children }) {
-  const [state, dispatchLocal] = useReducer(reducer, null, carregar);
+  const [state, dispatch] = useReducer(reducer, null, carregar);
   const [toasts, setToasts] = useState([]);
-  const [admin, setAdmin] = useState(null); // perfil do admin logado (modo servidor)
-  const [servidor, setServidor] = useState(temBackend ? "carregando" : "local"); // carregando | ok | vazio | erro | local
-  const [salvando, setSalvando] = useState(false);
-  const estadoRef = useRef(state);
-  const timerSalvar = useRef(null);
 
   useEffect(() => {
     try {
-      if (temBackend) localStorage.setItem(KEY_FAVORITOS, JSON.stringify(state.favorites));
-      else localStorage.setItem(KEY, JSON.stringify(state));
+      localStorage.setItem(KEY, JSON.stringify(state));
     } catch (e) {
       /* sem persistência: o app segue funcionando na sessão atual */
     }
@@ -140,73 +115,6 @@ export function AppProvider({ children }) {
     const id = Math.random().toString(36).slice(2);
     setToasts((t) => [...t, { id, msg }]);
     setTimeout(() => setToasts((t) => t.filter((x) => x.id !== id)), 2600);
-  }, []);
-
-  // Modo servidor: busca o conteúdo e acompanha o login do admin
-  const recarregar = useCallback(async () => {
-    try {
-      const r = await backend.carregarDoServidor();
-      const proximo = reducer(estadoRef.current, { type: "servidor/carregar", ...r });
-      estadoRef.current = proximo;
-      dispatchLocal({ type: "servidor/carregar", ...r });
-      setServidor(r.conteudo ? "ok" : "vazio");
-    } catch (e) {
-      setServidor("erro");
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!temBackend) return;
-    recarregar();
-    backend.usuarioAtual().then(setAdmin).catch(() => setAdmin(null));
-    return backend.aoMudarLogin((perfil) => {
-      setAdmin(perfil);
-      recarregar(); // o admin enxerga também as avaliações pendentes
-    });
-  }, [recarregar]);
-
-  // Grava o conteúdo no servidor 0,8 s depois da última edição (junta várias edições seguidas)
-  const agendarSalvar = useCallback(() => {
-    clearTimeout(timerSalvar.current);
-    setSalvando(true);
-    timerSalvar.current = setTimeout(async () => {
-      try {
-        await backend.salvarConteudo(estadoRef.current);
-        setServidor("ok");
-      } catch (e) {
-        toast("Não foi possível salvar no servidor. Confira a conexão e tente de novo.");
-      } finally {
-        setSalvando(false);
-      }
-    }, 800);
-  }, [toast]);
-
-  // dispatch que, no modo servidor, também grava a mudança no Supabase
-  const dispatch = useCallback(
-    (a) => {
-      const anterior = estadoRef.current;
-      estadoRef.current = reducer(anterior, a);
-      dispatchLocal(a);
-      if (!temBackend) return;
-
-      const falhou = () => toast("Não foi possível salvar no servidor. Confira a conexão e tente de novo.");
-      if (ACOES_CONTEUDO.test(a.type)) agendarSalvar();
-      if (a.type === "place/delete") backend.avaliacoes.apagarDoLugar(a.id).catch(falhou);
-      if (a.type === "post/delete") backend.comentarios.apagarDoPost(a.id).catch(falhou);
-      if (a.type === "review/add") backend.avaliacoes.inserir(a.review).catch(falhou);
-      if (a.type === "review/status") backend.avaliacoes.status(a.id, a.status).catch(falhou);
-      if (a.type === "review/delete") backend.avaliacoes.apagar(a.id).catch(falhou);
-      if (a.type === "comment/add") backend.comentarios.inserir(a.comment).catch(falhou);
-      if (a.type === "comment/delete") backend.comentarios.apagar(a.id).catch(falhou);
-      if (a.type === "session/set" && !a.userId) backend.sair();
-    },
-    [agendarSalvar, toast]
-  );
-
-  // Primeira publicação: manda o conteúdo atual (dados.json) para o servidor vazio
-  const enviarTudo = useCallback(async () => {
-    await backend.enviarTudo(estadoRef.current);
-    setServidor("ok");
   }, []);
 
   // Aviso guardado antes de um recarregamento (ex.: "Salvar no projeto")
@@ -222,13 +130,9 @@ export function AppProvider({ children }) {
     }
   }, [toast]);
 
-  const usuarioLocal = useMemo(() => state.users.find((u) => u.id === state.session) || null, [state.users, state.session]);
-  const usuario = temBackend ? admin : usuarioLocal;
+  const usuario = useMemo(() => state.users.find((u) => u.id === state.session) || null, [state.users, state.session]);
 
-  const value = useMemo(
-    () => ({ state, dispatch, usuario, toast, temBackend, servidor, salvando, enviarTudo, recarregar }),
-    [state, dispatch, usuario, toast, servidor, salvando, enviarTudo, recarregar]
-  );
+  const value = useMemo(() => ({ state, dispatch, usuario, toast }), [state, usuario, toast]);
 
   return (
     <Ctx.Provider value={value}>

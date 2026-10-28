@@ -5,7 +5,6 @@ import { TIPOS } from "../data/seed";
 import { formatarDistancia } from "../lib/maps";
 import Autocomplete from "./Autocomplete";
 import Icon from "./Icon";
-import { enviarImagem, temBackend } from "../lib/backend";
 
 export function Estrelas({ nota }) {
   return (
@@ -280,9 +279,7 @@ export function CampoImagem({ rotulo, valor, cor, onChange, formato = "poster" }
               e.target.value = "";
               if (!file) return;
               try {
-                const reduzida = await lerImagem(file, formato === "largo" ? 1200 : 480);
-                // Com servidor, a imagem vai para o Supabase Storage e fica só o link (o conteúdo continua leve)
-                onChange(temBackend ? await enviarImagem(reduzida) : reduzida);
+                onChange(await lerImagem(file, formato === "largo" ? 1200 : 480));
               }
               catch (err) { toast("Não foi possível enviar a imagem"); }
             }} />

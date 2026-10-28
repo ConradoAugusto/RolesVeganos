@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useApp, hashSenha } from "../store/AppContext";
-import * as backend from "../lib/backend";
-
-const temBackend = backend.temBackend;
 import { Campo, Reveal } from "../components/ui";
 import Icon from "../components/Icon";
 
@@ -33,21 +30,6 @@ export default function Login() {
     e.preventDefault();
     if (Date.now() < bloqueadoAte) return setErro("Muitas tentativas. Aguarde alguns segundos.");
     setEntrando(true);
-
-    // Modo servidor: login real do Supabase. Ao entrar, o redirecionamento acontece
-    // sozinho quando o perfil de admin chega (veja o <Navigate> acima).
-    if (temBackend) {
-      try {
-        const perfil = await backend.entrar(email.trim(), senha);
-        toast(`Olá, ${perfil.nome}!`);
-      } catch (err) {
-        setEntrando(false);
-        registrarFalha();
-        setErro(err.message);
-      }
-      return;
-    }
-
     const hash = await hashSenha(senha);
     const u = state.users.find((x) => x.email.toLowerCase() === email.trim().toLowerCase() && x.senhaHash === hash && x.role === "admin");
     setEntrando(false);

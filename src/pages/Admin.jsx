@@ -8,7 +8,6 @@ import { TEMAS_DOC } from "./Documentarios";
 import { CATEGORIAS_CUPOM, cupomVencido } from "./Cupons";
 import { CATEGORIAS_RECEITA } from "./Receitas";
 import { normalizar } from "../lib/maps";
-import * as backend from "../lib/backend";
 
 const ABAS = [
   ["visao", "Visão geral"],
@@ -653,12 +652,11 @@ function Configuracoes() {
 }
 
 function Conta() {
-  const { state, dispatch, usuario, toast, temBackend, servidor, enviarTudo } = useApp();
+  const { state, dispatch, usuario, toast } = useApp();
   const [email, setEmail] = useState(usuario.email);
   const [atual, setAtual] = useState("");
   const [nova, setNova] = useState("");
   const [erro, setErro] = useState("");
-  const [enviando, setEnviando] = useState(false);
   const arquivo = useRef(null);
 
   async function salvarConta(e) {
@@ -666,33 +664,10 @@ function Conta() {
     setErro("");
     if (!/^\S+@\S+\.\S+$/.test(email)) return setErro("E-mail inválido.");
     if (nova && nova.length < 8) return setErro("A nova senha precisa de pelo menos 8 caracteres.");
-    if (temBackend) {
-      try {
-        const mudouEmail = await backend.trocarConta({ email: email.trim(), senhaAtual: atual, novaSenha: nova });
-        setAtual(""); setNova("");
-        toast(mudouEmail ? "Confirme o novo e-mail pelo link enviado pelo Supabase" : "Conta atualizada");
-      } catch (err) {
-        setErro(err.message);
-      }
-      return;
-    }
     if ((await hashSenha(atual)) !== usuario.senhaHash) return setErro("Senha atual incorreta.");
     dispatch({ type: "user/update", user: { ...usuario, email: email.trim(), senhaHash: nova ? await hashSenha(nova) : usuario.senhaHash } });
     setAtual(""); setNova("");
     toast("Conta atualizada");
-  }
-
-  async function publicarInicial() {
-    if (!window.confirm("Enviar todo o conteúdo atual (lugares, artigos, receitas, documentários, cupons, avaliações e comentários) para o servidor?")) return;
-    setEnviando(true);
-    try {
-      await enviarTudo();
-      toast("Conteúdo enviado: o site já mostra estes dados para todo mundo");
-    } catch (err) {
-      toast(`Não foi possível enviar: ${err.message}`);
-    } finally {
-      setEnviando(false);
-    }
   }
 
   // Só no npm run dev: grava o estado atual direto em src/data/dados.json
@@ -734,7 +709,7 @@ function Conta() {
       try {
         const dados = JSON.parse(leitor.result);
         if (!Array.isArray(dados.places)) throw new Error();
-        if (!temBackend && !(dados.users || []).some((u) => u.role === "admin" && u.senhaHash)) throw new Error();
+        if (!(dados.users || []).some((u) => u.role === "admin" && u.senhaHash)) throw new Error();
         if (!window.confirm("Substituir todos os dados atuais por este arquivo?")) return;
         dispatch({ type: "data/replace", data: dados });
         toast("Dados importados");
@@ -766,40 +741,16 @@ function Conta() {
 
       <div className="painel-form">
         <h2>Dados do site</h2>
-        {temBackend ? (
-          <>
-            <p className="muted">
-              {servidor === "vazio"
-                ? "O servidor ainda está vazio. Envie o conteúdo atual uma vez; depois disso, cada edição é salva sozinha para todo mundo."
-                : servidor === "erro"
-                  ? "Não foi possível falar com o servidor. Confira as chaves do Supabase e se o schema.sql foi executado."
-                  : "Conectado ao servidor: cada edição é salva sozinha e aparece na hora para todo mundo."}
-            </p>
-            <div className="pilha">
-              {(servidor === "vazio" || import.meta.env.DEV) && (
-                <button className="btn primario" onClick={publicarInicial} disabled={enviando}>
-                  <Icon nome="check" tamanho={16} /> {enviando ? "Enviando…" : servidor === "vazio" ? "Enviar conteúdo atual para o servidor" : "Reenviar tudo para o servidor"}
-                </button>
-              )}
-              <button className="btn" onClick={exportar}><Icon nome="seta" tamanho={16} /> Baixar cópia de segurança (JSON)</button>
-              <button className="btn" onClick={() => arquivo.current?.click()}>Importar arquivo</button>
-              <input ref={arquivo} type="file" accept="application/json" hidden onChange={importar} />
-            </div>
-          </>
-        ) : (
-          <>
-            <p className="muted">Sem servidor, o que você cadastra fica salvo só neste navegador. Para publicar para todo mundo, exporte o arquivo e envie junto com o site (veja o README).</p>
-            <div className="pilha">
-              {import.meta.env.DEV && (
-                <button className="btn primario" onClick={salvarNoProjeto}><Icon nome="check" tamanho={16} /> Salvar no projeto (dados.json)</button>
-              )}
-              <button className="btn" onClick={exportar}><Icon nome="seta" tamanho={16} /> Exportar dados (JSON)</button>
-              <button className="btn" onClick={() => arquivo.current?.click()}>Importar arquivo</button>
-              <input ref={arquivo} type="file" accept="application/json" hidden onChange={importar} />
-              <button className="btn perigo" onClick={restaurar}><Icon nome="lixo" tamanho={16} /> Restaurar dados de exemplo</button>
-            </div>
-          </>
-        )}
+        <p className="muted">O que você cadastra fica salvo só neste navegador. Para publicar para todo mundo, exporte o arquivo e envie junto com o site (veja o README).</p>
+        <div className="pilha">
+          {import.meta.env.DEV && (
+            <button className="btn primario" onClick={salvarNoProjeto}><Icon nome="check" tamanho={16} /> Salvar no projeto (dados.json)</button>
+          )}
+          <button className="btn" onClick={exportar}><Icon nome="seta" tamanho={16} /> Exportar dados (JSON)</button>
+          <button className="btn" onClick={() => arquivo.current?.click()}>Importar arquivo</button>
+          <input ref={arquivo} type="file" accept="application/json" hidden onChange={importar} />
+          <button className="btn perigo" onClick={restaurar}><Icon nome="lixo" tamanho={16} /> Restaurar dados de exemplo</button>
+        </div>
       </div>
     </div>
   );
