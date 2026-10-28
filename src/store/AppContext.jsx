@@ -163,12 +163,8 @@ export async function hashSenha(senha) {
   return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, "0")).join("");
 }
 
-// Todo lugar começa com 5 estrelas. Quando chegam avaliações aprovadas,
-// a nota passa a ser a média delas (pendentes e rejeitadas não contam).
-export const NOTA_INICIAL = 5;
-
-export function mediaDoLugar(place, reviews) {
-  const aprovadas = reviews.filter((r) => r.placeId === place.id && r.status === "aprovado");
-  if (!aprovadas.length) return NOTA_INICIAL;
-  return aprovadas.reduce((soma, r) => soma + r.nota, 0) / aprovadas.length;
+// Sem backend não dá para guardar avaliações dos visitantes: a nota exibida é a do Google
+// (cadastrada no painel). Lugar sem nota do Google fica sem estrelas.
+export function mediaDoLugar(place) {
+  return Number(place.notaGoogle) || null;
 }

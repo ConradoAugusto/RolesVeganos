@@ -70,15 +70,15 @@ export default function Explore() {
       )
       .map((p) => ({
         ...p,
-        media: mediaDoLugar(p, state.reviews),
+        media: mediaDoLugar(p),
         distancia: cidade?.lat != null && p.lat != null ? distanciaKm(cidade, p) : null,
       }));
     return filtrada.sort((a, b) => {
       if (ordem === "nome") return a.nome.localeCompare(b.nome);
       if (ordem === "perto" && a.distancia != null) return a.distancia - b.distancia;
-      return b.media - a.media;
+      return (b.media || 0) - (a.media || 0);
     });
-  }, [publicados, state.reviews, state.favorites, cidade, cat, soSalvos, q, ordem]);
+  }, [publicados, state.favorites, cidade, cat, soSalvos, q, ordem]);
 
   function escolherCidade(c) {
     definir({ nome: c.cidade || c.nome, lat: c.lat ?? null, lng: c.lng ?? null, origem: "busca" });
@@ -119,7 +119,7 @@ export default function Explore() {
               )}
             </p>
             <h1>Seu próximo <em>rolê vegano</em> começa aqui.</h1>
-            <p className="sub">Restaurantes, cafés, padarias e lojas veganas, com avaliações de quem já foi.</p>
+            <p className="sub">Restaurantes, cafés, padarias e lojas veganas, com a nota de cada lugar no Google.</p>
           </Reveal>
 
           <Reveal delay={0.1}>

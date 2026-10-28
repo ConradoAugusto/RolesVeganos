@@ -27,9 +27,7 @@ export function Capa({ nome, cor, imagem, className = "foto" }) {
 }
 
 export function PlaceCard({ place, favorito, onFav, distancia, ativo, delay = 0 }) {
-  const { state } = useApp();
-  const nota = mediaDoLugar(place, state.reviews);
-  const total = state.reviews.filter((r) => r.placeId === place.id && r.status === "aprovado").length;
+  const nota = mediaDoLugar(place);
   return (
     <article className={`cartao ${ativo ? "ativo" : ""}`} style={{ "--atraso": `${delay}s` }}>
       <Link to={`/lugar/${place.id}`} className="cartao-capa" aria-label={place.nome} tabIndex={-1}>
@@ -50,10 +48,13 @@ export function PlaceCard({ place, favorito, onFav, distancia, ativo, delay = 0 
           )}
         </div>
         <div className="meta">
-          <Estrelas nota={nota} />
-          <span>{total} {total === 1 ? "avaliação" : "avaliações"}</span>
+          {nota ? (
+            <>
+              <Estrelas nota={nota} />
+              {place.totalGoogle ? <span title="Avaliações no Google">{Number(place.totalGoogle).toLocaleString("pt-BR")} no Google</span> : null}
+            </>
+          ) : null}
           <span>{place.tipo}</span>
-          {place.notaGoogle ? <span className="nota-google" title="Nota no Google">G {Number(place.notaGoogle).toFixed(1).replace(".", ",")}</span> : null}
           {distancia != null && <span className="dist"><Icon nome="pin" tamanho={13} />{formatarDistancia(distancia)}</span>}
         </div>
         <p className="desc">{place.descricao}</p>

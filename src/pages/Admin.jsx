@@ -16,7 +16,6 @@ const ABAS = [
   ["receitas", "Receitas"],
   ["docs", "Documentários"],
   ["cupons", "Cupons"],
-  ["avaliacoes", "Avaliações"],
   ["config", "Configurações"],
 ];
 
@@ -39,7 +38,6 @@ export default function Admin() {
       <div className="admin-conteudo" key={aba}>
         {aba === "visao" && <Visao irPara={irPara} />}
         {aba === "lugares" && <Lugares editarId={params.get("editar")} />}
-        {aba === "avaliacoes" && <Avaliacoes />}
         {aba === "docs" && <DocsAdmin />}
         {aba === "receitas" && <ReceitasAdmin editarId={params.get("editar")} />}
         {aba === "cupons" && <CuponsAdmin />}
@@ -65,12 +63,10 @@ function Visao({ irPara }) {
     <div className="stats">
       <Stat rotulo="Lugares publicados" valor={state.places.filter((p) => p.status === "aprovado").length} onClick={() => irPara("lugares")} />
       <Stat rotulo="Lugares para aprovar" valor={state.places.filter((p) => p.status === "pendente").length} onClick={() => irPara("lugares")} />
-      <Stat rotulo="Avaliações para revisar" valor={state.reviews.filter((r) => r.status === "pendente").length} onClick={() => irPara("avaliacoes")} />
       <Stat rotulo="Documentários" valor={(state.docs || []).length} onClick={() => irPara("docs")} />
       <Stat rotulo="Cupons ativos" valor={(state.cupons || []).filter((c) => c.status === "publicado" && !cupomVencido(c)).length} onClick={() => irPara("cupons")} />
       <Stat rotulo="Artigos" valor={state.posts.length} onClick={() => irPara("blog")} />
       <Stat rotulo="Receitas" valor={(state.receitas || []).length} onClick={() => irPara("receitas")} />
-      <Stat rotulo="Comentários" valor={state.comments.length} onClick={() => irPara("blog")} />
     </div>
   );
 }
@@ -121,7 +117,7 @@ function Lugares({ editarId }) {
   }
 
   function remover(p, rejeitar = false) {
-    const msg = rejeitar ? `Rejeitar "${p.nome}"? A sugestão será apagada.` : `Excluir "${p.nome}"? As avaliações dele também serão removidas.`;
+    const msg = rejeitar ? `Rejeitar "${p.nome}"? A sugestão será apagada.` : `Excluir "${p.nome}"?`;
     if (!window.confirm(msg)) return;
     dispatch({ type: "place/delete", id: p.id });
     toast(rejeitar ? "Sugestão rejeitada" : "Lugar excluído");
@@ -192,41 +188,6 @@ function Lugares({ editarId }) {
             </div>
           );
         }) : <Vazio titulo={filtro === "pendente" ? "Nada para aprovar" : "Nenhum lugar neste filtro"} />}
-      </div>
-    </section>
-  );
-}
-
-function Avaliacoes() {
-  const { state, dispatch, toast } = useApp();
-  const [filtro, setFiltro] = useState("pendente");
-  const lista = state.reviews.filter((r) => filtro === "todos" || r.status === filtro);
-
-  return (
-    <section>
-      <div className="filtros-admin">
-        {[["pendente", "Para revisar"], ["aprovado", "Publicadas"], ["rejeitado", "Rejeitadas"], ["todos", "Todas"]].map(([f, l]) => (
-          <button key={f} className={`chip ${filtro === f ? "ativo" : ""}`} onClick={() => setFiltro(f)}>{l}</button>
-        ))}
-      </div>
-      <div className="lista-reviews">
-        {lista.length ? lista.map((r) => {
-          const lugar = state.places.find((p) => p.id === r.placeId);
-          return (
-            <div key={r.id} className="review">
-              <div className="review-topo">
-                <div><strong>{r.userName}</strong><small> em {lugar?.nome || "lugar removido"} · {r.data}</small></div>
-                <span className="nota-review"><Icon nome="estrela" tamanho={13} cheio /> {r.nota}</span>
-              </div>
-              <p>{r.texto}</p>
-              <div className="acoes-linha">
-                {r.status !== "aprovado" && <button className="link" onClick={() => { dispatch({ type: "review/status", id: r.id, status: "aprovado" }); toast("Avaliação publicada"); }}>Publicar</button>}
-                {r.status !== "rejeitado" && <button className="link" onClick={() => { dispatch({ type: "review/status", id: r.id, status: "rejeitado" }); toast("Avaliação rejeitada"); }}>Rejeitar</button>}
-                <button className="link perigo" onClick={() => { if (window.confirm("Excluir esta avaliação?")) { dispatch({ type: "review/delete", id: r.id }); toast("Avaliação excluída"); } }}>Excluir</button>
-              </div>
-            </div>
-          );
-        }) : <Vazio titulo="Nada por aqui" />}
       </div>
     </section>
   );
@@ -395,37 +356,18 @@ function BlogAdmin({ editarId }) {
           <div key={p.id} className="linha">
             <span className="com-miniatura">
               {p.imagem ? <img src={p.imagem} alt="" className="larga" /> : <i style={{ "--c": p.cor }} className="larga" />}
-              <span><strong>{p.titulo}</strong><small>{state.comments.filter((c) => c.postId === p.id).length} comentários</small></span>
+              <span><strong>{p.titulo}</strong></span>
             </span>
             <span>{p.data?.split("-").reverse().join("/")}</span>
             <span><em className={`status ${p.status === "rascunho" ? "rascunho" : "aprovado"}`}>{p.status === "rascunho" ? "rascunho" : "publicado"}</em></span>
             <span className="acoes-linha">
               <Link className="link" to={`/blog/${p.slug}`}>Ver</Link>
               <button className="link" onClick={() => abrir(p)}>Editar</button>
-              <button className="link perigo" onClick={() => { if (window.confirm("Excluir artigo e comentários?")) { dispatch({ type: "post/delete", id: p.id }); toast("Artigo excluído"); } }}>Excluir</button>
+              <button className="link perigo" onClick={() => { if (window.confirm("Excluir artigo?")) { dispatch({ type: "post/delete", id: p.id }); toast("Artigo excluído"); } }}>Excluir</button>
             </span>
           </div>
         )) : <Vazio titulo="Nenhum artigo encontrado" />}
       </div>
-      {state.comments.length > 0 && (
-        <>
-          <h3 className="sub-titulo">Comentários recentes</h3>
-          <div className="lista-reviews">
-            {state.comments.slice(0, 15).map((c) => {
-              const post = state.posts.find((p) => p.id === c.postId);
-              return (
-                <div key={c.id} className="review">
-                  <div className="review-topo"><div><strong>{c.userName}</strong><small> em {post?.titulo || "artigo removido"} · {c.data}</small></div></div>
-                  <p>{c.texto}</p>
-                  <div className="acoes-linha">
-                    <button className="link perigo" onClick={() => { dispatch({ type: "comment/delete", id: c.id }); toast("Comentário removido"); }}>Remover</button>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </>
-      )}
     </section>
   );
 }
