@@ -85,7 +85,7 @@ export default function PlaceDetail() {
                 <li><Icon nome="pin" /><span>{lugar.endereco}</span></li>
                 <li><Icon nome="relogio" /><span>{lugar.horario || "Horário não informado"}</span></li>
                 {lugar.telefone && <li><Icon nome="telefone" /><a href={`tel:${lugar.telefone.replace(/\D/g, "")}`}>{lugar.telefone}</a></li>}
-                {lugar.site && <li><Icon nome="globo" /><a href={lugar.site} target="_blank" rel="noreferrer">{lugar.site.replace(/^https?:\/\//, "")}</a></li>}
+                {lugar.site && <li><Icon nome="globo" /><a href={lugar.site} target="_blank" rel="noreferrer">Site</a></li>}
               </ul>
               <RedesSociais redes={lugar.redes} className="redes-detalhe" />
               <p className="aviso-info">Confira horários e cardápio no local antes de ir.</p>
