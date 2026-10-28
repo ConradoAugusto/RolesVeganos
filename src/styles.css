@@ -221,6 +221,11 @@ h1 em, h2 em { font-family: var(--serifa); font-style: italic; font-weight: 400;
 .resumo h2 { font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
 .resumo h2 .muted { font-weight: 400; }
 .lista { display: flex; flex-direction: column; gap: 12px; }
+.resumo { scroll-margin-top: calc(var(--topo-h) + 16px); }
+.paginacao { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.paginacao .paginas { display: flex; gap: 6px; flex-wrap: wrap; justify-content: center; }
+.paginacao .chip { min-width: 38px; justify-content: center; }
+.paginacao .btn:disabled { opacity: 0.35; }
 .painel-mapa { position: sticky; top: calc(var(--topo-h) + 16px); height: calc(100vh - var(--topo-h) - 32px); min-height: 420px; }
 
 /* ===== Card de lugar ===== */

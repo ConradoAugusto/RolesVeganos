@@ -11,6 +11,7 @@ import { distanciaKm, normalizar } from "../lib/maps";
 
 const CATS = ["Todos", ...TIPOS];
 const RAIO_KM = 40;
+const POR_PAGINA = 5;
 
 function naCidade(p, cidade) {
   if (!cidade) return true;
@@ -33,6 +34,8 @@ export default function Explore() {
   const [soSalvos, setSoSalvos] = useState(false);
   const [ativo, setAtivo] = useState(null);
   const [vista, setVista] = useState("lista"); // só no celular
+  const [pagina, setPagina] = useState(1);
+  const topoLista = useRef(null);
   const q = normalizar(params.get("q") || "");
 
   // Link "trocar cidade" do cabeçalho
@@ -79,6 +82,19 @@ export default function Explore() {
       return (b.media || 0) - (a.media || 0);
     });
   }, [publicados, state.favorites, cidade, cat, soSalvos, q, ordem]);
+
+  // Mudou filtro, busca, cidade ou ordem: volta para a primeira página
+  useEffect(() => setPagina(1), [cidade, cat, soSalvos, q, ordem]);
+
+  const totalPaginas = Math.max(1, Math.ceil(lista.length / POR_PAGINA));
+  const paginaAtual = Math.min(pagina, totalPaginas);
+  const daPagina = lista.slice((paginaAtual - 1) * POR_PAGINA, paginaAtual * POR_PAGINA);
+
+  function irParaPagina(n) {
+    setPagina(n);
+    setAtivo(null);
+    topoLista.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 
   function escolherCidade(c) {
     definir({ nome: c.cidade || c.nome, lat: c.lat ?? null, lng: c.lng ?? null, origem: "busca" });
@@ -191,7 +207,7 @@ export default function Explore() {
 
       <div className={`container principal vista-${vista}`}>
         <div className="painel">
-          <div className="resumo">
+          <div className="resumo" ref={topoLista}>
             <h2>
               {lista.length} {lista.length === 1 ? "lugar" : "lugares"}
               {cidade && <span className="muted"> {onde}</span>}
@@ -202,7 +218,7 @@ export default function Explore() {
 
           <div className="lista">
             {lista.length ? (
-              lista.map((p, i) => (
+              daPagina.map((p, i) => (
                 <div key={p.id} onMouseEnter={() => setAtivo(p.id)} onMouseLeave={() => setAtivo(null)}>
                   <PlaceCard
                     place={p}
@@ -229,6 +245,30 @@ export default function Explore() {
               </Vazio>
             )}
           </div>
+
+          {totalPaginas > 1 && (
+            <nav className="paginacao" aria-label="Páginas">
+              <button className="btn" onClick={() => irParaPagina(paginaAtual - 1)} disabled={paginaAtual === 1}>
+                <Icon nome="voltar" tamanho={16} /> Anterior
+              </button>
+              <div className="paginas">
+                {Array.from({ length: totalPaginas }, (_, i) => i + 1).map((n) => (
+                  <button
+                    key={n}
+                    className={`chip ${n === paginaAtual ? "ativo" : ""}`}
+                    aria-current={n === paginaAtual ? "page" : undefined}
+                    aria-label={`Página ${n}`}
+                    onClick={() => irParaPagina(n)}
+                  >
+                    {n}
+                  </button>
+                ))}
+              </div>
+              <button className="btn" onClick={() => irParaPagina(paginaAtual + 1)} disabled={paginaAtual === totalPaginas}>
+                Próxima <Icon nome="seta" tamanho={16} />
+              </button>
+            </nav>
+          )}
         </div>
 
         <div className="painel-mapa">
